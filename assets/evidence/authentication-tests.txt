@@ -1,0 +1,57 @@
+Verified at 2026-11-12T15:44:06+07:00
+Environment: dedicated local virtual environment; offline, fake clients
+
+test_account_removed_or_role_revoked (test_auth.AuthenticationTests.test_account_removed_or_role_revoked) ... ok
+test_admin_and_logout (test_auth.AuthenticationTests.test_admin_and_logout) ... ok
+test_guest_and_user_are_denied_admin (test_auth.AuthenticationTests.test_guest_and_user_are_denied_admin) ... ok
+test_missing_configuration_remains_guest (test_auth.AuthenticationTests.test_missing_configuration_remains_guest) ... ok
+test_passwords (test_auth.AuthenticationTests.test_passwords) ... ok
+test_pending_job_preserved_at_login (test_auth.AuthenticationTests.test_pending_job_preserved_at_login) ... ok
+test_session_version_change_requires_reauthentication (test_auth.AuthenticationTests.test_session_version_change_requires_reauthentication) ... ok
+test_wrong_password_and_session_throttle (test_auth.AuthenticationTests.test_wrong_password_and_session_throttle) ... ok
+test_duplicate_email_and_concurrent_registration (test_registration.RegistrationTests.test_duplicate_email_and_concurrent_registration) ... ok
+test_legacy_admin_can_login_with_email (test_registration.RegistrationTests.test_legacy_admin_can_login_with_email) ... ok
+test_registration_login_and_pending_job (test_registration.RegistrationTests.test_registration_login_and_pending_job) ... ok
+test_registration_validation_and_disable (test_registration.RegistrationTests.test_registration_validation_and_disable) ... ok
+test_s3_failure_does_not_login (test_registration.RegistrationTests.test_s3_failure_does_not_login) ... ok
+test_accounts_bootstrap_and_duplicate_creation (test_s3_store.S3StoreTests.test_accounts_bootstrap_and_duplicate_creation) ... ok
+test_concurrent_first_write_preserves_both_jobs (test_s3_store.S3StoreTests.test_concurrent_first_write_preserves_both_jobs) ... ok
+test_concurrent_update_preserves_profile_and_saved_jobs (test_s3_store.S3StoreTests.test_concurrent_update_preserves_profile_and_saved_jobs) ... ok
+test_data_persists_and_owners_are_isolated (test_s3_store.S3StoreTests.test_data_persists_and_owners_are_isolated) ... ok
+test_missing_differs_from_access_denied (test_s3_store.S3StoreTests.test_missing_differs_from_access_denied) ... ok
+test_status_validation_and_missing_application (test_s3_store.S3StoreTests.test_status_validation_and_missing_application) ... ok
+test_account_removed_or_role_revoked (test_s3_auth.S3AuthTests.test_account_removed_or_role_revoked) ... ok
+test_admin_and_logout (test_s3_auth.S3AuthTests.test_admin_and_logout) ... ok
+test_admin_create_user_service (test_s3_auth.S3AuthTests.test_admin_create_user_service) ... ok
+test_guest_and_user_are_denied_admin (test_s3_auth.S3AuthTests.test_guest_and_user_are_denied_admin) ... ok
+test_missing_configuration_remains_guest (test_s3_auth.S3AuthTests.test_missing_configuration_remains_guest) ... ok
+test_passwords (test_s3_auth.S3AuthTests.test_passwords) ... ok
+test_pending_job_preserved_at_login (test_s3_auth.S3AuthTests.test_pending_job_preserved_at_login) ... ok
+test_s3_login_revocation_and_outage (test_s3_auth.S3AuthTests.test_s3_login_revocation_and_outage) ... ok
+test_session_version_change_requires_reauthentication (test_s3_auth.S3AuthTests.test_session_version_change_requires_reauthentication) ... ok
+test_wrong_password_and_session_throttle (test_s3_auth.S3AuthTests.test_wrong_password_and_session_throttle) ... ok
+test_account_removed_or_role_revoked (test_job_actions.ActionAuthorizationTests.test_account_removed_or_role_revoked) ... ok
+test_actions_require_server_session (test_job_actions.ActionAuthorizationTests.test_actions_require_server_session) ... ok
+test_admin_and_logout (test_job_actions.ActionAuthorizationTests.test_admin_and_logout) ... ok
+test_guest_action_preserves_job_and_requests_login (test_job_actions.ActionAuthorizationTests.test_guest_action_preserves_job_and_requests_login) ... ok
+test_guest_and_user_are_denied_admin (test_job_actions.ActionAuthorizationTests.test_guest_and_user_are_denied_admin) ... ok
+test_missing_configuration_remains_guest (test_job_actions.ActionAuthorizationTests.test_missing_configuration_remains_guest) ... ok
+test_passwords (test_job_actions.ActionAuthorizationTests.test_passwords) ... ok
+test_pending_job_preserved_at_login (test_job_actions.ActionAuthorizationTests.test_pending_job_preserved_at_login) ... ok
+test_session_version_change_requires_reauthentication (test_job_actions.ActionAuthorizationTests.test_session_version_change_requires_reauthentication) ... ok
+test_table_details_use_ordered_ids_and_ignore_other_cells (test_job_actions.ActionAuthorizationTests.test_table_details_use_ordered_ids_and_ignore_other_cells) ... ok
+test_wrong_password_and_session_throttle (test_job_actions.ActionAuthorizationTests.test_wrong_password_and_session_throttle) ... ok
+test_admin_status_guard_and_reenable_does_not_restore_old_session (test_account_security.AccountSecurityTests.test_admin_status_guard_and_reenable_does_not_restore_old_session) ... ok
+test_change_requires_current_password_and_invalidates_tokens (test_account_security.AccountSecurityTests.test_change_requires_current_password_and_invalidates_tokens) ... ok
+test_conflict_does_not_lose_concurrent_profile_or_password_reset (test_account_security.AccountSecurityTests.test_conflict_does_not_lose_concurrent_profile_or_password_reset) ... ok
+test_expiry_resend_cooldown_unknown_and_disabled (test_account_security.AccountSecurityTests.test_expiry_resend_cooldown_unknown_and_disabled) ... ok
+test_login_limit_is_shared_and_window_expires (test_account_security.AccountSecurityTests.test_login_limit_is_shared_and_window_expires) ... ok
+test_reset_token_is_hashed_single_use_and_revokes_sessions (test_account_security.AccountSecurityTests.test_reset_token_is_hashed_single_use_and_revokes_sessions) ... ok
+test_summary_preserves_history_and_deduplication (test_account_security.AccountSecurityTests.test_summary_preserves_history_and_deduplication) ... ok
+test_verify_ownership_and_consumption (test_account_security.AccountSecurityTests.test_verify_ownership_and_consumption) ... ok
+test_wrong_attempts_persist_across_requests (test_account_security.AccountSecurityTests.test_wrong_attempts_persist_across_requests) ... ok
+
+----------------------------------------------------------------------
+Ran 49 tests in 68.380s
+
+OK

@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-11-12T15:24:16+07:00",
+  "environment": "Local offline tests using fake clients",
+  "python": "3.12.10",
+  "modules": [
+    "test_auth",
+    "test_registration",
+    "test_s3_store",
+    "test_s3_auth",
+    "test_job_actions",
+    "test_account_security"
+  ],
+  "tests_run": 41,
+  "failures": 0,
+  "errors": 1,
+  "skipped": 0,
+  "successful": false
+}

@@ -1,0 +1,45 @@
+{
+  "purpose": "Source fingerprint for report code excerpts",
+  "files": [
+    {
+      "path": "dashboard/auth.py",
+      "sha256": "a6ea7d83953cfcbaa268e7e4f457455c452ee7edf26f818217750a8861850b1c"
+    },
+    {
+      "path": "dashboard/registration.py",
+      "sha256": "1b1b4a0d4b7bb133c0e358df8dff2a4169a6a8614507b0f7d82f80d7fa49d8d2"
+    },
+    {
+      "path": "dashboard/passwords.py",
+      "sha256": "093d57208562537b9d3410b82c17c16db34ee62baba2f18fb0f279fdac4a45db"
+    },
+    {
+      "path": "dashboard/s3_store.py",
+      "sha256": "b286eeeb2486e2212b31d3d4c178979b2b6905edfd1f88d715de71f4abb814e5"
+    },
+    {
+      "path": "dashboard/user_storage.py",
+      "sha256": "7a5207e861219a7108f57b8f9aa09864b7fc7eb4b904e7fb6115de0967a2cd14"
+    },
+    {
+      "path": "dashboard/personal_service.py",
+      "sha256": "db2d308e8934836f9d3318c98540ce02b55fc6077e9c4c0c586dd51329a146f0"
+    },
+    {
+      "path": "dashboard/personal_pages.py",
+      "sha256": "228f23a1ababc9d209b10dc1b334e1b5d83ed7125cabde311e292676a858df1c"
+    },
+    {
+      "path": "dashboard/job_actions.py",
+      "sha256": "c6daa66abc1c903fb4d6e458a8429c7688bead972e564176e51c8a4474a5f70d"
+    },
+    {
+      "path": "dashboard/account_security.py",
+      "sha256": "bac355cf087d85675a061f0c7edb1aed007f13d0e6e7e575e612aa898e67aeea"
+    },
+    {
+      "path": "config/user_data_iam_policy.json",
+      "sha256": "4ae4ceb7fc9d8bdec82e17c06f37f352f9c23712ecc2e8461ac6562a892290a5"
+    }
+  ]
+}

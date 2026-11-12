@@ -1,0 +1,9 @@
+{
+  "name": "ha-manh-cuong-workshop",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "check": "node check.mjs"
+  }
+}
