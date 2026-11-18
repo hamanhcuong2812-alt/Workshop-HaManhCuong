@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 9"
-menuTitle: "Worklog Tuần 9"
+title: "Tuần 9: Python SDK và tính nhất quán khi cập nhật dữ liệu"
+menuTitle: "Tuần 9: Python SDK và tính nhất quán khi cập nhật dữ liệu"
 weight: 9
 chapter: false
 pre: "<b>1.9. </b>"

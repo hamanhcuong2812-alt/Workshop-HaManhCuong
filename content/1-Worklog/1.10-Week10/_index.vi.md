@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 10"
-menuTitle: "Worklog Tuần 10"
+title: "Tuần 10: Các lớp dữ liệu và AWS Glue Data Catalog"
+menuTitle: "Tuần 10: Các lớp dữ liệu và AWS Glue Data Catalog"
 weight: 10
 chapter: false
 pre: "<b>1.10. </b>"

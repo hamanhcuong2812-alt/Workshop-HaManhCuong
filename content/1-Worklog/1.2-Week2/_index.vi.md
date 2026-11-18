@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 2"
-menuTitle: "Worklog Tuần 2"
+title: "Tuần 2: AWS IAM, danh tính và quyền truy cập"
+menuTitle: "Tuần 2: AWS IAM, danh tính và quyền truy cập"
 weight: 2
 chapter: false
 pre: "<b>1.2. </b>"

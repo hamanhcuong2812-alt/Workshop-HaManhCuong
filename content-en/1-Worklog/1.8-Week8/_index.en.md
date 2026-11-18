@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 8"
+title: "Week 8: Amazon DynamoDB and the NoSQL Data Model"
 weight: 8
 chapter: false
 pre: "<b>1.8. </b>"

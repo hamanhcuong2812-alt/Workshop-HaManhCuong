@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 9"
+title: "Week 9: Python SDK and Consistency in Data Updates"
 weight: 9
 chapter: false
 pre: "<b>1.9. </b>"

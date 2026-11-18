@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 1"
-menuTitle: "Worklog Tuần 1"
+title: "Tuần 1: Tài khoản AWS, Budgets và Support"
+menuTitle: "Tuần 1: Tài khoản AWS, Budgets và Support"
 weight: 1
 chapter: false
 pre: "<b>1.1. </b>"

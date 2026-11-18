@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 6"
+title: "Week 6: Amazon S3 and AWS CLI Operations"
 weight: 6
 chapter: false
 pre: "<b>1.6. </b>"

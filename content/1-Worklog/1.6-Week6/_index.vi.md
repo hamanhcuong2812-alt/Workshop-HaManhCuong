@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 6"
-menuTitle: "Worklog Tuần 6"
+title: "Tuần 6: Amazon S3 và thao tác bằng AWS CLI"
+menuTitle: "Tuần 6: Amazon S3 và thao tác bằng AWS CLI"
 weight: 6
 chapter: false
 pre: "<b>1.6. </b>"

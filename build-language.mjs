@@ -73,7 +73,7 @@ function navBranch(page, current) {
   const expanded = current.route.startsWith(page.route) || (page.section === '4-workshop' && current.section === '4-workshop');
   let label = page.title;
   const number = page.displayNumber || page.route.split('/').filter(Boolean).at(-1)?.match(/^(\d+(?:\.\d+)*)-/)?.[1];
-  if (number?.includes('.') && !label.startsWith(number) && !label.startsWith('Worklog')) label = number + '. ' + label;
+  if (number?.includes('.') && !label.startsWith(number)) label = number + '. ' + label;
   const link = `<a href="${page.route}"${active ? ' aria-current="page"' : ''}>${escape(label).replace(/^(\d+(?:\.\d+)*\.?)\s/, '<b>$1</b> ')}</a>`;
   return `<li class="${expanded ? 'in-path' : ''}">${list.length ? `<details${expanded ? ' open' : ''}><summary>${link}<span class="chevron" aria-hidden="true">›</span></summary><ul>${list.map(child => navBranch(child, current)).join('')}</ul></details>` : link}</li>`;
 }

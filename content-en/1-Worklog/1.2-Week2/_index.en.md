@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 2"
+title: "Week 2: AWS IAM, Identity, and Access Permissions"
 weight: 2
 chapter: false
 pre: "<b>1.2. </b>"

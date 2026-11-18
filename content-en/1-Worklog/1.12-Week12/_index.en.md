@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 12"
+title: "Week 12: CloudWatch, Knowledge Review, and Handover"
 weight: 12
 chapter: false
 pre: "<b>1.12. </b>"

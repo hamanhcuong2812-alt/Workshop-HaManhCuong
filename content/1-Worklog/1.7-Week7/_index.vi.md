@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 7"
-menuTitle: "Worklog Tuần 7"
+title: "Tuần 7: Bảo mật S3 và bảo vệ dữ liệu người dùng"
+menuTitle: "Tuần 7: Bảo mật S3 và bảo vệ dữ liệu người dùng"
 weight: 7
 chapter: false
 pre: "<b>1.7. </b>"

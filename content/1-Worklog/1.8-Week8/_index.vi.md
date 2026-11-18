@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 8"
-menuTitle: "Worklog Tuần 8"
+title: "Tuần 8: Amazon DynamoDB và mô hình dữ liệu NoSQL"
+menuTitle: "Tuần 8: Amazon DynamoDB và mô hình dữ liệu NoSQL"
 weight: 8
 chapter: false
 pre: "<b>1.8. </b>"

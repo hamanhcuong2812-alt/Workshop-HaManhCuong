@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 11"
+title: "Week 11: Amazon Athena and Job Data Queries"
 weight: 11
 chapter: false
 pre: "<b>1.11. </b>"

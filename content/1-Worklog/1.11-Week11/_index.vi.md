@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 11"
-menuTitle: "Worklog Tuần 11"
+title: "Tuần 11: Amazon Athena và truy vấn dữ liệu tuyển dụng"
+menuTitle: "Tuần 11: Amazon Athena và truy vấn dữ liệu tuyển dụng"
 weight: 11
 chapter: false
 pre: "<b>1.11. </b>"

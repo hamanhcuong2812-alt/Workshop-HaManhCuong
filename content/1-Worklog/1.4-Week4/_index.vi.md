@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 4"
-menuTitle: "Worklog Tuần 4"
+title: "Tuần 4: Amazon EC2 và môi trường chạy backend"
+menuTitle: "Tuần 4: Amazon EC2 và môi trường chạy backend"
 weight: 4
 chapter: false
 pre: "<b>1.4. </b>"

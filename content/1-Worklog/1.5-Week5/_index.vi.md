@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 5"
-menuTitle: "Worklog Tuần 5"
+title: "Tuần 5: IAM Role cho ứng dụng và Session Manager"
+menuTitle: "Tuần 5: IAM Role cho ứng dụng và Session Manager"
 weight: 5
 chapter: false
 pre: "<b>1.5. </b>"

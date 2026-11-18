@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 1"
+title: "Week 1: AWS Accounts, Budgets, and Support"
 weight: 1
 chapter: false
 pre: "<b>1.1. </b>"

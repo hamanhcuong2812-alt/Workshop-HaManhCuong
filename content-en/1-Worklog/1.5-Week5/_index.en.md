@@ -1,5 +1,5 @@
 ---
-title: "Worklog Week 5"
+title: "Week 5: Application IAM Roles and Session Manager"
 weight: 5
 chapter: false
 pre: "<b>1.5. </b>"

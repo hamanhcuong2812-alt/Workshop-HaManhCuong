@@ -1,6 +1,6 @@
 ---
-title: "Worklog Tuần 3"
-menuTitle: "Worklog Tuần 3"
+title: "Tuần 3: Amazon VPC và kiểm soát kết nối ứng dụng"
+menuTitle: "Tuần 3: Amazon VPC và kiểm soát kết nối ứng dụng"
 weight: 3
 chapter: false
 pre: "<b>1.3. </b>"
