@@ -50,3 +50,9 @@
 .report-page .source-date{margin:28px 0 0}
 
 .self-rating{color:#15803d;font-weight:700;font-size:1.2em;line-height:1;display:inline-block}
+
+.language-switch{display:grid;gap:8px;margin-bottom:12px}
+.language-switch label{font-size:14px;color:#c7d0db}
+.language-switch select{width:100%;padding:9px 10px;border:1px solid #61748d;border-radius:4px;background:#263b53;color:#fff;font:inherit;cursor:pointer}
+.language-switch small{font-size:12px;line-height:1.5;color:#c7d0db}
+#google_translate_element{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}

@@ -89,3 +89,45 @@ document.querySelectorAll('article img').forEach(image => {
 });
 document.querySelector('#close-image').addEventListener('click', () => viewer.close());
 viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
+
+// Load translation only when the reader requests English.
+const languageSelect = document.querySelector('#report-language');
+const translationStatus = document.querySelector('#translation-status');
+let translationScript;
+function applyReportLanguage(language) {
+  localStorage.setItem('report-language', language);
+  languageSelect.value = language;
+  const combo = document.querySelector('.goog-te-combo');
+  if (combo) {
+    combo.value = language;
+    combo.dispatchEvent(new Event('change', { bubbles: true }));
+    translationStatus.textContent = language === 'en' ? 'Automatic translation by Google' : '';
+    return;
+  }
+  if (language === 'vi') return;
+  translationStatus.textContent = 'Loading English translation…';
+  if (translationScript) return;
+  window.reportTranslateReady = () => {
+    new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'vi,en', autoDisplay: false}, 'google_translate_element');
+    let attempts = 0;
+    const timer = setInterval(() => {
+      if (document.querySelector('.goog-te-combo')) {
+        clearInterval(timer);
+        applyReportLanguage(languageSelect.value);
+      } else if (++attempts > 40) {
+        clearInterval(timer);
+        translationStatus.textContent = 'Translation unavailable. Please try again later.';
+      }
+    }, 250);
+  };
+  translationScript = document.createElement('script');
+  translationScript.src = 'https://translate.google.com/translate_a/element.js?cb=reportTranslateReady';
+  translationScript.onerror = () => {
+    translationStatus.textContent = 'Cannot connect to Google Translate. Please try again.';
+    translationScript.remove();
+    translationScript = undefined;
+  };
+  document.head.append(translationScript);
+}
+languageSelect?.addEventListener('change', () => applyReportLanguage(languageSelect.value));
+if (localStorage.getItem('report-language') === 'en') applyReportLanguage('en');
