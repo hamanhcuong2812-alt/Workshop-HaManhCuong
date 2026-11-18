@@ -79,3 +79,6 @@
 @media(max-width:700px){#main,.report-page #main{margin-left:0}#sidebar{width:min(300px,90vw)}}
 
 #sidebar .sidebar-scroll{overflow-x:hidden;overscroll-behavior-y:contain}
+
+/* Match the reference sidebar without disclosure arrows. */
+#sidebar .chevron{display:none}
