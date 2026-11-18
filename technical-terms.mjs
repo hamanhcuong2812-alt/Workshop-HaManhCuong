@@ -514,15 +514,78 @@ export const technicalTerms = [
   [
     "raw/current/history/clean",
     "raw/current/history/clean"
+  ],
+  [
+    "Một EC2 chạy collector, ETL, dashboard, Nginx và các worker. JSON raw/current/history/clean nằm trên EC2; Parquet phân tích và dữ liệu cá nhân nằm trên S3. Glue Data Catalog cung cấp metadata; DynamoDB lưu moderation/audit, Projection Worker xuất snapshot để Athena lọc. systemd quản lý lịch, CloudWatch nhận log và cảnh báo lỗi.",
+    "A single EC2 instance runs the collector, ETL pipeline, dashboard, Nginx, and workers. The raw/current/history/clean JSON datasets remain on EC2; Parquet files for analytics and user data are stored in S3. AWS Glue Data Catalog provides metadata. DynamoDB stores moderation state and audit logs, while the Projection Worker exports snapshots used for filtering in Athena. systemd manages scheduled tasks, and CloudWatch receives logs and error alerts."
+  ],
+  [
+    "Thiết lập tài nguyên dữ liệu, metadata, quyền và cấu hình ứng dụng.",
+    "Set up data resources, metadata, access permissions, and application configuration."
+  ],
+  [
+    "Đóng gói source, triển khai EC2, đưa dữ liệu nền vào runtime.",
+    "Package the source code, deploy the EC2 instance, and load the initial data into the runtime environment."
+  ],
+  [
+    "Chạy quy trình thu thập, ETL và publication; kết nối dashboard.",
+    "Run the data collection, ETL, and data publication workflows, then connect the dashboard."
+  ],
+  [
+    "Thiết lập USER/ADMIN, HTTPS, timer, worker và giám sát.",
+    "Configure USER/ADMIN access, HTTPS, timers, workers, and monitoring."
+  ],
+  [
+    "Kiểm thử và đối chiếu kết quả với ảnh/log thực tế.",
+    "Test the system and verify the results against actual screenshots and logs."
+  ],
+  [
+    "Dữ liệu phản ánh ITviec tiếp cận được, không đại diện toàn bộ thị trường. Theo dõi ứng tuyển do USER cập nhật, không tự nộp CV.",
+    "The dataset covers the ITviec job postings accessible to the project and does not represent the entire market. Application tracking is updated manually by the USER; the system does not submit CVs automatically."
+  ],
+  [
+    "Chuẩn bị → S3 → Catalog/Athena → DynamoDB → EC2 → thu thập → ETL/publication → dashboard → tài khoản/quản trị → HTTPS → lịch/worker → CloudWatch → nghiệm thu/backup.",
+    "Preparation → S3 → Catalog/Athena → DynamoDB → EC2 → data collection → ETL/data publication → dashboard → accounts/administration → HTTPS → scheduling/workers → CloudWatch → acceptance testing/backup."
+  ],
+  [
+    "Hệ thống sử dụng Python trên một Amazon EC2 để thu thập và xử lý dữ liệu. Dữ liệu phân tích dạng Parquet được đưa lên Amazon S3, khai báo metadata trong AWS Glue Data Catalog và truy vấn bằng Amazon Athena. Website sử dụng Streamlit, Plotly và được cung cấp qua Nginx, HTTPS. DynamoDB lưu trạng thái kiểm duyệt và nhật ký quản trị; S3 lưu tài khoản và hoạt động cá nhân.",
+    "The system uses Python on a single Amazon EC2 instance to collect and process data. Parquet files for analytics are uploaded to Amazon S3, registered in AWS Glue Data Catalog, and queried with Amazon Athena. The website uses Streamlit and Plotly and is served through Nginx over HTTPS. DynamoDB stores moderation state and administrative audit logs; S3 stores account data and user activity."
+  ],
+  [
+    "Ứng dụng hỗ trợ đăng ký và đăng nhập bằng email, mật khẩu. Sau đăng nhập, người dùng có thể lưu việc làm quan tâm, theo dõi ứng tuyển và quản lý hồ sơ cá nhân.",
+    "The application supports registration and login with an email address and password. After logging in, users can save job postings, track their job applications, and manage their profiles."
+  ],
+  [
+    "giúp người dùng theo dõi tiến trình tìm việc. Trạng thái do người dùng cập nhật, không đồng bộ tự động từ ITviec.",
+    "helps users track their job search progress. Statuses are updated manually by the user and are not automatically synchronized with ITviec."
+  ],
+  [
+    "tập hợp các tin cần xem lại, hỗ trợ tìm kiếm, mở tin và bỏ lưu.",
+    "contains bookmarked job postings and supports searching, opening, and removing saved postings."
+  ],
+  [
+    "Hồ sơ cá nhân",
+    "User Profile"
+  ],
+  [
+    "Quản lý người dùng",
+    "User Management"
+  ],
+  [
+    "cho phép cập nhật tên hiển thị, giới thiệu và đổi mật khẩu.",
+    "allows users to update their display name and bio and change their password."
+  ],
+  [
+    "giúp ADMIN tìm tài khoản và quản lý trạng thái hoạt động. ADMIN cũng có thể tạo tài khoản USER bằng email và mật khẩu ban đầu.",
+    "allows ADMIN to find accounts and manage their active status. ADMIN can also create USER accounts with an email address and an initial password."
   ]
 ];
 
 const escapeAttribute = text => text.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
-const escapeRegex = text => text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-const sortedTerms = [...technicalTerms].sort((a,b) => b[0].length - a[0].length);
-const translations = new Map(sortedTerms);
-const pattern = new RegExp('(?<![\\p{L}\\p{N}_])(' + sortedTerms.map(([term]) => escapeRegex(term)).join('|') + ')(?![\\p{L}\\p{N}_])', 'gu');
+const translations = new Map(technicalTerms);
 export function protectTechnicalHtml(html) {
+  // Protect complete text nodes to preserve the translator's sentence context.
+  // Splitting sentences around individual nouns can break English word order.
   let skip = 0;
   return html.split(/(<[^>]*>)/g).map(part => {
     if (part.startsWith('<')) {
@@ -534,6 +597,9 @@ export function protectTechnicalHtml(html) {
       return part;
     }
     if (skip) return part;
-    return part.replace(pattern, term => `<span class="notranslate technical-term" translate="no" data-vi="${escapeAttribute(term)}" data-en="${escapeAttribute(translations.get(term))}">${term}</span>`);
+    const term = part.trim();
+    if (!translations.has(term)) return part;
+    const span = `<span class="notranslate technical-term" translate="no" data-vi="${escapeAttribute(term)}" data-en="${escapeAttribute(translations.get(term))}">${term}</span>`;
+    return part.replace(term, () => span);
   }).join('');
 }
