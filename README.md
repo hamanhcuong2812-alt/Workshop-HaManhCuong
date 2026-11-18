@@ -4,7 +4,7 @@ Báo cáo Vietnam IT Job Market, vai trò Authentication & User, giai đoạn 08
 
 ## Nội dung
 
-Trang chủ và bảy mục báo cáo bằng tiếng Việt và tiếng Anh. Worklog có 12 chủ đề học AWS và 60 buổi được phân bổ khi tổng hợp. Bản đề xuất và Workshop dùng nội dung chung của nhóm. Mục Blog ghi chưa có bài được đăng, mục Sự kiện ghi hoạt động đã xác nhận tham dự.
+Trang chủ và sáu mục báo cáo bằng tiếng Việt và tiếng Anh. Worklog có 12 chủ đề học AWS và 60 buổi được phân bổ khi tổng hợp. Bản đề xuất và Workshop dùng nội dung chung của nhóm. Mục Blog ghi chưa có bài được đăng, mục Sự kiện ghi hoạt động đã xác nhận tham dự.
 
 ## Chỉnh sửa
 
@@ -45,8 +45,8 @@ Nội dung báo cáo và cấu hình triển khai nằm trong repository này. C
 Hai ngôn ngữ dùng nội dung riêng, giống cách tổ chức bài mẫu Hugo:
 
 - `content/`: tiếng Việt.
-- `content-en/`: tiếng Anh; mục 2 và 5 dùng bản Anh từ tài liệu nhóm, các mục cá nhân được dịch theo bài của Hà Mạnh Cường.
+- `content-en/`: tiếng Anh; mục 2 và 4 dùng bản Anh từ tài liệu nhóm, các mục cá nhân được dịch theo bài của Hà Mạnh Cường.
 - Trang Anh nằm dưới `/en/`. Bộ chọn ngôn ngữ mở đúng trang tương ứng.
 - Không tải Google Translate. Khi sửa nội dung, cập nhật cả hai bản trước khi chạy `node build.mjs`.
 
-`build.mjs` dựng lần lượt hai ngôn ngữ qua `build-language.mjs`. `node check.mjs` kiểm tra liên kết, tài nguyên và đích của bộ chọn ngôn ngữ ở cả 134 trang.
+`build.mjs` dựng lần lượt hai ngôn ngữ qua `build-language.mjs`. `node check.mjs` kiểm tra liên kết, tài nguyên và đích của bộ chọn ngôn ngữ ở cả 132 trang.
