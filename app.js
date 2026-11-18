@@ -113,7 +113,7 @@ function applyReportLanguage(language) {
     const timer = setInterval(() => {
       if (document.querySelector('.goog-te-combo')) {
         clearInterval(timer);
-        applyReportLanguage(languageSelect.value);
+        setTimeout(() => applyReportLanguage(languageSelect.value), 800);
       } else if (++attempts > 40) {
         clearInterval(timer);
         translationStatus.textContent = 'Translation unavailable. Please try again later.';
