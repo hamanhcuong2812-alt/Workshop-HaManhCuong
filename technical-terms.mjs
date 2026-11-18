@@ -578,6 +578,14 @@ export const technicalTerms = [
   [
     "giúp ADMIN tìm tài khoản và quản lý trạng thái hoạt động. ADMIN cũng có thể tạo tài khoản USER bằng email và mật khẩu ban đầu.",
     "allows ADMIN to find accounts and manage their active status. ADMIN can also create USER accounts with an email address and an initial password."
+  ],
+  [
+    "Vietnam IT Job Market thu thập tin tuyển dụng CNTT từ",
+    "Vietnam IT Job Market collects IT job postings from"
+  ],
+  [
+    ", xử lý bằng Python, lưu Parquet trên S3 và phân tích bằng Athena/Streamlit. Workshop trình bày quy trình thiết lập các thành phần và đưa hệ thống vào vận hành trên AWS.",
+    ", processes them using Python, stores Parquet files in S3, and analyzes the data using Athena and Streamlit. This workshop explains how to configure the components and operate the system on AWS."
   ]
 ];
 
