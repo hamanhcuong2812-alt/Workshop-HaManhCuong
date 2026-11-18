@@ -1,5 +1,5 @@
 ---
-title: "Week 1: AWS Accounts, Budgets, and Support"
+title: "Week 1: Getting Started with AWS and Managing the Learning Account"
 weight: 1
 chapter: false
 pre: "<b>1.1. </b>"

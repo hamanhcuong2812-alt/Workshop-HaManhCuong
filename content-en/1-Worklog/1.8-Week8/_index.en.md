@@ -1,5 +1,5 @@
 ---
-title: "Week 8: Amazon DynamoDB and the NoSQL Data Model"
+title: "Week 8: Understanding DynamoDB in the System Moderation Layer"
 weight: 8
 chapter: false
 pre: "<b>1.8. </b>"

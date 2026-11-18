@@ -1,5 +1,5 @@
 ---
-title: "Week 10: Data Layers and AWS Glue Data Catalog"
+title: "Week 10: Connecting Parquet Data to Analytics Metadata"
 weight: 10
 chapter: false
 pre: "<b>1.10. </b>"

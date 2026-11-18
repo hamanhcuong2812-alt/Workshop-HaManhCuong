@@ -1,6 +1,6 @@
 ---
-title: "Tuần 6: Amazon S3 và thao tác bằng AWS CLI"
-menuTitle: "Tuần 6: Amazon S3 và thao tác bằng AWS CLI"
+title: "Tuần 6: Tổ chức dữ liệu tài khoản trên S3 và sử dụng CLI"
+menuTitle: "Tuần 6: Tổ chức dữ liệu tài khoản trên S3 và sử dụng CLI"
 weight: 6
 chapter: false
 pre: "<b>1.6. </b>"

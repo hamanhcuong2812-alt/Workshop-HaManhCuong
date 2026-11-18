@@ -1,6 +1,6 @@
 ---
-title: "Tuần 12: CloudWatch, tổng hợp kiến thức và bàn giao"
-menuTitle: "Tuần 12: CloudWatch, tổng hợp kiến thức và bàn giao"
+title: "Tuần 12: Theo dõi lỗi, tổng hợp kiến thức và chuẩn bị bàn giao"
+menuTitle: "Tuần 12: Theo dõi lỗi, tổng hợp kiến thức và chuẩn bị bàn giao"
 weight: 12
 chapter: false
 pre: "<b>1.12. </b>"

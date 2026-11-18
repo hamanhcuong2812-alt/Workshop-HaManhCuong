@@ -1,6 +1,6 @@
 ---
-title: "Tuần 4: Amazon EC2 và môi trường chạy backend"
-menuTitle: "Tuần 4: Amazon EC2 và môi trường chạy backend"
+title: "Tuần 4: Môi trường EC2 cho backend và chức năng tài khoản"
+menuTitle: "Tuần 4: Môi trường EC2 cho backend và chức năng tài khoản"
 weight: 4
 chapter: false
 pre: "<b>1.4. </b>"

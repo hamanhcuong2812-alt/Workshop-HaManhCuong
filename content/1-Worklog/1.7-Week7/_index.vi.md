@@ -1,6 +1,6 @@
 ---
-title: "Tuần 7: Bảo mật S3 và bảo vệ dữ liệu người dùng"
-menuTitle: "Tuần 7: Bảo mật S3 và bảo vệ dữ liệu người dùng"
+title: "Tuần 7: Kiểm soát truy cập và bảo vệ dữ liệu cá nhân"
+menuTitle: "Tuần 7: Kiểm soát truy cập và bảo vệ dữ liệu cá nhân"
 weight: 7
 chapter: false
 pre: "<b>1.7. </b>"

@@ -1,6 +1,6 @@
 ---
-title: "Tuần 3: Amazon VPC và kiểm soát kết nối ứng dụng"
-menuTitle: "Tuần 3: Amazon VPC và kiểm soát kết nối ứng dụng"
+title: "Tuần 3: Tìm hiểu đường kết nối từ người dùng đến ứng dụng"
+menuTitle: "Tuần 3: Tìm hiểu đường kết nối từ người dùng đến ứng dụng"
 weight: 3
 chapter: false
 pre: "<b>1.3. </b>"

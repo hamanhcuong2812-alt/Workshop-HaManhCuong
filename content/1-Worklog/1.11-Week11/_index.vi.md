@@ -1,6 +1,6 @@
 ---
-title: "Tuần 11: Amazon Athena và truy vấn dữ liệu tuyển dụng"
-menuTitle: "Tuần 11: Amazon Athena và truy vấn dữ liệu tuyển dụng"
+title: "Tuần 11: Truy vấn Athena và dữ liệu cho danh sách việc làm cá nhân"
+menuTitle: "Tuần 11: Truy vấn Athena và dữ liệu cho danh sách việc làm cá nhân"
 weight: 11
 chapter: false
 pre: "<b>1.11. </b>"

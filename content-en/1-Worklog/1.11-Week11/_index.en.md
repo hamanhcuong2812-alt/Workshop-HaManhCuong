@@ -1,5 +1,5 @@
 ---
-title: "Week 11: Amazon Athena and Job Data Queries"
+title: "Week 11: Athena Queries and Data for Personal Job Lists"
 weight: 11
 chapter: false
 pre: "<b>1.11. </b>"

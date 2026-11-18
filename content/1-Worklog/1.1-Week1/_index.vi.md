@@ -1,6 +1,6 @@
 ---
-title: "Tuần 1: Tài khoản AWS, Budgets và Support"
-menuTitle: "Tuần 1: Tài khoản AWS, Budgets và Support"
+title: "Tuần 1: Khởi đầu với AWS và quản lý tài khoản học tập"
+menuTitle: "Tuần 1: Khởi đầu với AWS và quản lý tài khoản học tập"
 weight: 1
 chapter: false
 pre: "<b>1.1. </b>"

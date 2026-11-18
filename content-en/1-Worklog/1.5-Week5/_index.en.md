@@ -1,5 +1,5 @@
 ---
-title: "Week 5: Application IAM Roles and Session Manager"
+title: "Week 5: Service Access through Roles and SSM Administration Sessions"
 weight: 5
 chapter: false
 pre: "<b>1.5. </b>"

@@ -19,18 +19,18 @@ Trong kỳ thực tập, tôi theo lộ trình tìm hiểu AWS cùng nhóm, từ
 
 | Tuần | Khung thời gian | Chủ đề |
 | --- | --- | --- |
-| 1 | 08/08–14/08/2026 | [Làm quen môi trường AWS và theo dõi chi phí](1.1-Week1/) |
-| 2 | 15/08–21/08/2026 | [Danh tính và quyền truy cập với IAM](1.2-Week2/) |
-| 3 | 22/08–28/08/2026 | [Mạng AWS và kiểm soát kết nối ứng dụng](1.3-Week3/) |
-| 4 | 29/08–04/09/2026 | [EC2 và môi trường chạy backend](1.4-Week4/) |
-| 5 | 05/09–11/09/2026 | [IAM Role cho ứng dụng và quản trị qua SSM](1.5-Week5/) |
-| 6 | 12/09–18/09/2026 | [Lưu trữ object trên S3 và thao tác với CLI](1.6-Week6/) |
-| 7 | 19/09–25/09/2026 | [Bảo vệ dữ liệu người dùng trên S3](1.7-Week7/) |
-| 8 | 26/09–02/10/2026 | [Cấu trúc NoSQL và cách truy cập DynamoDB](1.8-Week8/) |
-| 9 | 03/10–09/10/2026 | [Python SDK và tính nhất quán khi cập nhật dữ liệu](1.9-Week9/) |
-| 10 | 10/10–16/10/2026 | [Các lớp dữ liệu và metadata với Glue Data Catalog](1.10-Week10/) |
-| 11 | 17/10–23/10/2026 | [Truy vấn dữ liệu tuyển dụng với Athena](1.11-Week11/) |
-| 12 | 24/10–30/10/2026 | [Giám sát, tổng hợp kiến thức và bàn giao](1.12-Week12/) |
+| 1 | 08/08–14/08/2026 | [Khởi đầu với AWS và quản lý tài khoản học tập](1.1-Week1/) |
+| 2 | 15/08–21/08/2026 | [Xác định danh tính và giới hạn quyền cho backend](1.2-Week2/) |
+| 3 | 22/08–28/08/2026 | [Tìm hiểu đường kết nối từ người dùng đến ứng dụng](1.3-Week3/) |
+| 4 | 29/08–04/09/2026 | [Môi trường EC2 cho backend và chức năng tài khoản](1.4-Week4/) |
+| 5 | 05/09–11/09/2026 | [Quyền truy cập dịch vụ qua role và phiên quản trị SSM](1.5-Week5/) |
+| 6 | 12/09–18/09/2026 | [Tổ chức dữ liệu tài khoản trên S3 và sử dụng CLI](1.6-Week6/) |
+| 7 | 19/09–25/09/2026 | [Kiểm soát truy cập và bảo vệ dữ liệu cá nhân](1.7-Week7/) |
+| 8 | 26/09–02/10/2026 | [Tìm hiểu DynamoDB trong lớp kiểm duyệt của hệ thống](1.8-Week8/) |
+| 9 | 03/10–09/10/2026 | [Transaction và conditional writes khi cập nhật dữ liệu](1.9-Week9/) |
+| 10 | 10/10–16/10/2026 | [Liên kết dữ liệu Parquet với metadata phân tích](1.10-Week10/) |
+| 11 | 17/10–23/10/2026 | [Truy vấn Athena và dữ liệu cho danh sách việc làm cá nhân](1.11-Week11/) |
+| 12 | 24/10–30/10/2026 | [Theo dõi lỗi, tổng hợp kiến thức và chuẩn bị bàn giao](1.12-Week12/) |
 
 Ngày 31/10/2026 là mốc kết thúc kỳ thực tập.
 

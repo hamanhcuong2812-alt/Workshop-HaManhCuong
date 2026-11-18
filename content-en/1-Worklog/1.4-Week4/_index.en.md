@@ -1,5 +1,5 @@
 ---
-title: "Week 4: Amazon EC2 and the Backend Runtime Environment"
+title: "Week 4: The EC2 Environment for Backend and Account Features"
 weight: 4
 chapter: false
 pre: "<b>1.4. </b>"

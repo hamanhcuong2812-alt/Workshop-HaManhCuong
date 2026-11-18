@@ -1,6 +1,6 @@
 ---
-title: "Tuần 8: Amazon DynamoDB và mô hình dữ liệu NoSQL"
-menuTitle: "Tuần 8: Amazon DynamoDB và mô hình dữ liệu NoSQL"
+title: "Tuần 8: Tìm hiểu DynamoDB trong lớp kiểm duyệt của hệ thống"
+menuTitle: "Tuần 8: Tìm hiểu DynamoDB trong lớp kiểm duyệt của hệ thống"
 weight: 8
 chapter: false
 pre: "<b>1.8. </b>"

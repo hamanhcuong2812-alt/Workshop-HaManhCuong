@@ -1,5 +1,5 @@
 ---
-title: "Week 6: Amazon S3 and AWS CLI Operations"
+title: "Week 6: Organizing Account Data in S3 and Using the CLI"
 weight: 6
 chapter: false
 pre: "<b>1.6. </b>"

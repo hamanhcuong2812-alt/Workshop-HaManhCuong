@@ -1,5 +1,5 @@
 ---
-title: "Week 9: Python SDK and Consistency in Data Updates"
+title: "Week 9: Transactions and Conditional Writes for Data Updates"
 weight: 9
 chapter: false
 pre: "<b>1.9. </b>"

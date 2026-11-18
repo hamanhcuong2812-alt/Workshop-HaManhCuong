@@ -1,5 +1,5 @@
 ---
-title: "Week 12: CloudWatch, Knowledge Review, and Handover"
+title: "Week 12: Investigating Errors, Reviewing Knowledge, and Preparing Handover"
 weight: 12
 chapter: false
 pre: "<b>1.12. </b>"

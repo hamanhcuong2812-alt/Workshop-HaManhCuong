@@ -1,6 +1,6 @@
 ---
-title: "Tuần 2: AWS IAM, danh tính và quyền truy cập"
-menuTitle: "Tuần 2: AWS IAM, danh tính và quyền truy cập"
+title: "Tuần 2: Xác định danh tính và giới hạn quyền cho backend"
+menuTitle: "Tuần 2: Xác định danh tính và giới hạn quyền cho backend"
 weight: 2
 chapter: false
 pre: "<b>1.2. </b>"

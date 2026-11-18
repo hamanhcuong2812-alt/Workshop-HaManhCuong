@@ -18,18 +18,18 @@ During the internship, I followed the group AWS learning path, from accounts, IA
 
 | Week | Period | Topic |
 | --- | --- | --- |
-| 1 | 08/08–14/08/2026 | [Getting started with AWS and cost monitoring](1.1-Week1/) |
-| 2 | 15/08–21/08/2026 | [Identity and access management with IAM](1.2-Week2/) |
-| 3 | 22/08–28/08/2026 | [AWS networking and application connectivity controls](1.3-Week3/) |
-| 4 | 29/08–04/09/2026 | [EC2 and the backend runtime environment](1.4-Week4/) |
-| 5 | 05/09–11/09/2026 | [Application IAM roles and administration through SSM](1.5-Week5/) |
-| 6 | 12/09–18/09/2026 | [S3 object storage and CLI operations](1.6-Week6/) |
-| 7 | 19/09–25/09/2026 | [Protecting user data in S3](1.7-Week7/) |
-| 8 | 26/09–02/10/2026 | [NoSQL structure and DynamoDB access patterns](1.8-Week8/) |
-| 9 | 03/10–09/10/2026 | [Python SDK and consistency in data updates](1.9-Week9/) |
-| 10 | 10/10–16/10/2026 | [Data layers and metadata with Glue Data Catalog](1.10-Week10/) |
-| 11 | 17/10–23/10/2026 | [Querying job posting data with Athena](1.11-Week11/) |
-| 12 | 24/10–30/10/2026 | [Monitoring, knowledge review, and handover](1.12-Week12/) |
+| 1 | 08/08–14/08/2026 | [Getting Started with AWS and Managing the Learning Account](1.1-Week1/) |
+| 2 | 15/08–21/08/2026 | [Identifying Backend Identities and Limiting Permissions](1.2-Week2/) |
+| 3 | 22/08–28/08/2026 | [Understanding the Connection from Users to the Application](1.3-Week3/) |
+| 4 | 29/08–04/09/2026 | [The EC2 Environment for Backend and Account Features](1.4-Week4/) |
+| 5 | 05/09–11/09/2026 | [Service Access through Roles and SSM Administration Sessions](1.5-Week5/) |
+| 6 | 12/09–18/09/2026 | [Organizing Account Data in S3 and Using the CLI](1.6-Week6/) |
+| 7 | 19/09–25/09/2026 | [Access Controls and Personal Data Protection](1.7-Week7/) |
+| 8 | 26/09–02/10/2026 | [Understanding DynamoDB in the System Moderation Layer](1.8-Week8/) |
+| 9 | 03/10–09/10/2026 | [Transactions and Conditional Writes for Data Updates](1.9-Week9/) |
+| 10 | 10/10–16/10/2026 | [Connecting Parquet Data to Analytics Metadata](1.10-Week10/) |
+| 11 | 17/10–23/10/2026 | [Athena Queries and Data for Personal Job Lists](1.11-Week11/) |
+| 12 | 24/10–30/10/2026 | [Investigating Errors, Reviewing Knowledge, and Preparing Handover](1.12-Week12/) |
 
 The internship ended on 31/10/2026.
 

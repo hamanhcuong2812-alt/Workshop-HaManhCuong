@@ -1,6 +1,6 @@
 ---
-title: "Tuần 5: IAM Role cho ứng dụng và Session Manager"
-menuTitle: "Tuần 5: IAM Role cho ứng dụng và Session Manager"
+title: "Tuần 5: Quyền truy cập dịch vụ qua role và phiên quản trị SSM"
+menuTitle: "Tuần 5: Quyền truy cập dịch vụ qua role và phiên quản trị SSM"
 weight: 5
 chapter: false
 pre: "<b>1.5. </b>"

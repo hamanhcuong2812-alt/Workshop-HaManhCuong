@@ -1,5 +1,5 @@
 ---
-title: "Week 3: Amazon VPC and Application Connectivity Controls"
+title: "Week 3: Understanding the Connection from Users to the Application"
 weight: 3
 chapter: false
 pre: "<b>1.3. </b>"

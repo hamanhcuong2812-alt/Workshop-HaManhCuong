@@ -1,5 +1,5 @@
 ---
-title: "Week 7: S3 Security and User Data Protection"
+title: "Week 7: Access Controls and Personal Data Protection"
 weight: 7
 chapter: false
 pre: "<b>1.7. </b>"
