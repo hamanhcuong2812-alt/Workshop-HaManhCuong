@@ -23,7 +23,7 @@ Khởi chạy collector thông qua service điều phối.
 
 ### Điều kiện đầu vào
 
-EC2, seed, env ở 5.6 đã xong; chưa có lượt khác đang chạy.
+EC2, seed, env ở 4.6 đã xong; chưa có lượt khác đang chạy.
 
 ### Các bước thực hiện
 

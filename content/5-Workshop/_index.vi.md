@@ -1,11 +1,10 @@
 ---
 title: "Workshop"
 date: 2026-11-11T00:00:00+07:00
-weight: 5
+weight: 4
 chapter: false
 pre: " <b> 5. </b> "
 aliases:
-  - "/4-workshop/"
   - "/4-workshop/"
 ---
 
@@ -28,13 +27,11 @@ Workshop trình bày quá trình thiết lập Vietnam IT Job Market trên AWS, 
 | 5.7 | [Thiết lập và chạy thu thập ITviec](5.7-ITviec-Collection/) |
 | 5.8 | [Thiết lập ETL và công bố Parquet](5.8-Data-Processing/) |
 | 5.9 | [Cấu hình và triển khai Streamlit Dashboard](5.9-Streamlit-Dashboard/) |
-| 5.10 | [Thiết lập tài khoản và chức năng quản trị](5.10-Users-Administration/) |
-| 5.11 | [Thiết lập Nginx và HTTPS theo IP](5.11-Nginx-HTTPS/) |
-| 5.12 | [Thiết lập lịch pipeline và Operations Worker](5.12-Pipeline-Automation/) |
-| 5.13 | [Thiết lập CloudWatch và giám sát](5.13-Monitoring/) |
-| 5.14 | [Kiểm thử và nghiệm thu triển khai](5.14-Testing-Results/) |
-| 5.15 | [Sao lưu và kiểm tra phục hồi dữ liệu](5.15-Backup-Recovery/) |
-| 5.16 | [Dọn dẹp tài nguyên và kết luận](5.16-Cleanup-Conclusion/) |
+| 5.10 | [Thiết lập Nginx và HTTPS theo IP](5.11-Nginx-HTTPS/) |
+| 5.11 | [Thiết lập lịch pipeline và Operations Worker](5.12-Pipeline-Automation/) |
+| 5.12 | [Thiết lập CloudWatch và giám sát](5.13-Monitoring/) |
+| 5.13 | [Sao lưu và kiểm tra phục hồi dữ liệu](5.15-Backup-Recovery/) |
+| 5.14 | [Dọn dẹp tài nguyên và kết luận](5.16-Cleanup-Conclusion/) |
 
 ### Cách thực hiện
 

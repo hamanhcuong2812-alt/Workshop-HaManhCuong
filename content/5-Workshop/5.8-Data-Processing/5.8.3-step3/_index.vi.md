@@ -58,7 +58,7 @@ Canonical, artifact và local state truy vết được cùng run; lỗi giữ j
 
 ### Truy vết dữ liệu đã công bố
 
-Metadata **run-id** liên kết file Parquet trên S3 với lượt pipeline tạo ra nó. Trường **sha256** lưu mã kiểm tra nội dung để phục vụ đối chiếu tính toàn vẹn. Run-id của object trong ảnh khớp lượt pipeline đã ghi nhận thành công ở mục 5.7.3.
+Metadata **run-id** liên kết file Parquet trên S3 với lượt pipeline tạo ra nó. Trường **sha256** lưu mã kiểm tra nội dung để phục vụ đối chiếu tính toàn vẹn. Run-id của object trong ảnh khớp lượt pipeline đã ghi nhận thành công ở mục 4.7.3.
 
 ![Metadata file Parquet trên S3 với run-id khớp lượt pipeline và trường sha256](/images/workshop/setup-5-8-03.png)
 

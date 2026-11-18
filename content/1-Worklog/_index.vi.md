@@ -42,7 +42,7 @@ Các kết quả học tập thể hiện kiến thức được hệ thống h�
 
 ## Phần việc cá nhân và giai đoạn hoàn thiện
 
-Phần Authentication & User gồm đăng ký, đăng nhập, kiểm tra quyền, việc làm đã lưu, lịch sử ứng tuyển và hồ sơ. Mã nguồn liên quan cùng minh chứng được trình bày tại [mục 5.10](/5-workshop/5.10-users-administration/).
+Phần Authentication & User gồm đăng ký, đăng nhập, kiểm tra quyền, việc làm đã lưu, lịch sử ứng tuyển và hồ sơ. Minh chứng kiểm thử phần tài khoản được trình bày tại [Minh chứng kiểm thử](#minh-chung-kiem-thu).
 
 Các cập nhật ngày 01/11 và minh chứng triển khai ngày 11/11 thuộc giai đoạn hoàn thiện sau kỳ thực tập. Lượt kiểm tra bổ sung ngày 12/11 trong môi trường local riêng ghi nhận 49 trường hợp thành công thuộc sáu nhóm kiểm thử tài khoản; log lượt đầu và lượt chạy lại được lưu để đối chiếu. [Xem chi tiết kiểm thử](/1-worklog/#minh-chung-kiem-thu).
 

@@ -13,6 +13,9 @@ const basePath = (process.env.SITE_BASE_PATH || '').replace(/^\/+|\/+$/g, '');
 if (basePath && !/^[a-zA-Z0-9_-][a-zA-Z0-9._-]*$/.test(basePath)) throw new Error('SITE_BASE_PATH must be a repository name or /repository-name/.');
 const baseUrl = basePath ? `/${basePath}` : '';
 const output = path.resolve('dist');
+// Rebuild generated output so removed source pages cannot remain online.
+if (output !== path.join(process.cwd(), 'dist')) throw new Error('Unexpected output directory');
+fs.rmSync(output, { recursive: true, force: true });
 fs.mkdirSync(output, { recursive: true });
 fs.cpSync('assets', output, { recursive: true });
 fs.writeFileSync(path.join(output, 'style.css'), fs.readFileSync('style.css', 'utf8').replaceAll("url('/", "url('" + baseUrl + "/"));
@@ -25,7 +28,7 @@ const pages = walk('content').filter(file => file.endsWith('.md')).map(file => {
   const metadata = frontmatter?.[1] || '';
   const title = metadata.match(/^title:\s*["']?(.*?)["']?\s*$/m)?.[1] || path.basename(file);
   const relative = path.relative('content', path.dirname(file)).replaceAll('\\', '/');
-  return { title, route: '/' + relative.toLowerCase() + '/', body: raw.slice(frontmatter?.[0].length || 0), weight: Number(metadata.match(/^weight:\s*(\d+)/m)?.[1] || 0), section: relative.split('/')[0].toLowerCase() };
+  return { title, displayNumber: metadata.match(/^pre:.*?<b>\s*(\d+(?:\.\d+)*)\.?\s*<\/b>/m)?.[1], route: '/' + relative.toLowerCase() + '/', body: raw.slice(frontmatter?.[0].length || 0), weight: Number(metadata.match(/^weight:\s*(\d+)/m)?.[1] || 0), section: relative.split('/')[0].toLowerCase() };
 });
 const sections = [
   ['1-worklog', '1. Nhật ký công việc'], ['2-proposal', '2. Bản đề xuất'],
@@ -65,7 +68,7 @@ function navBranch(page, current) {
   const active = page.route === current.route;
   const expanded = current.route.startsWith(page.route);
   let label = page.title;
-  const number = page.route.split('/').filter(Boolean).at(-1)?.match(/^(\d+(?:\.\d+)*)-/)?.[1];
+  const number = page.displayNumber || page.route.split('/').filter(Boolean).at(-1)?.match(/^(\d+(?:\.\d+)*)-/)?.[1];
   if (number?.includes('.') && !label.startsWith(number) && !label.startsWith('Worklog')) label = number + '. ' + label;
   const link = `<a href="${page.route}"${active ? ' aria-current="page"' : ''}>${escape(label)}</a>`;
   return `<li class="${expanded ? 'in-path' : ''}">${list.length ? `<details${expanded ? ' open' : ''}><summary>${link}<span class="chevron" aria-hidden="true">›</span></summary><ul>${list.map(child => navBranch(child, current)).join('')}</ul></details>` : link}</li>`;

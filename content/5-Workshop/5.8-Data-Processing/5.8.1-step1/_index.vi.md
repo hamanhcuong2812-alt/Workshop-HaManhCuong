@@ -24,7 +24,7 @@ aliases:
 
 ### Điều kiện đầu vào
 
-Run đã vượt qua validation ở 5.7.
+Run đã vượt qua validation ở 4.7.
 
 ### Các bước thực hiện
 

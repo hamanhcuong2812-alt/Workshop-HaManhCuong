@@ -12,6 +12,8 @@ pre: " <b> 2. </b> "
 
 ### 1. Tóm tắt đề tài
 
+Bản đề xuất trình bày giải pháp xây dựng Vietnam IT Job Market và tổng hợp kết quả triển khai thực tế của dự án.
+
 **Vietnam IT Job Market** là nền tảng tổng hợp và phân tích tin tuyển dụng CNTT từ **ITviec**. Dự án xây dựng quy trình từ thu thập dữ liệu, làm sạch, lưu trữ đến truy vấn và hiển thị trên website. Người dùng có thể quan sát nhu cầu tuyển dụng trong tập dữ liệu, tìm việc phù hợp, lưu tin quan tâm và theo dõi lịch sử ứng tuyển.
 
 Hệ thống sử dụng Python trên một Amazon EC2 để thu thập và xử lý dữ liệu. Dữ liệu phân tích dạng Parquet được đưa lên Amazon S3, khai báo metadata trong AWS Glue Data Catalog và truy vấn bằng Amazon Athena. Website sử dụng Streamlit, Plotly và được cung cấp qua Nginx, HTTPS. DynamoDB lưu trạng thái kiểm duyệt và nhật ký quản trị; S3 lưu tài khoản và hoạt động cá nhân.
@@ -67,11 +69,10 @@ Tài nguyên chính của dự án được triển khai tại **Asia Pacific (S
 | Streamlit và Plotly | Xây dựng giao diện và các biểu đồ tương tác |
 | Nginx và Certbot | Cung cấp reverse proxy, HTTPS và duy trì chứng chỉ |
 
-**Luồng dữ liệu:** ITviec → Python trên EC2 → JSON → làm sạch, chuẩn hóa → Parquet trên S3 → Glue Data Catalog → Athena → Streamlit Dashboard.
+**Luồng dữ liệu:** ITviec → Python thu thập và xử lý trên EC2 → Parquet trên Amazon S3 → Amazon Athena → Streamlit Dashboard. AWS Glue Data Catalog cung cấp cấu trúc bảng và vị trí dữ liệu cho Athena.
 
 **Luồng kiểm duyệt:** ADMIN thao tác trên website → DynamoDB lưu trạng thái và audit → Projection Worker xuất snapshot lên S3 → Athena lọc việc làm đã xóa mềm.
 
-Glue được sử dụng làm Data Catalog. Quá trình ETL chạy bằng Python trên EC2.
 
 ### 5. Các nội dung xây dựng
 
@@ -99,7 +100,7 @@ Người dùng có thể nhập từ khóa, kết hợp bộ lọc địa điể
 
 Website hỗ trợ đăng ký, đăng nhập bằng email và phân quyền USER/ADMIN. Tài khoản và hoạt động cá nhân được lưu trên S3. Người dùng có thể lưu hoặc bỏ lưu việc làm, cập nhật trạng thái ứng tuyển, chỉnh sửa tên hiển thị, giới thiệu và đổi mật khẩu.
 
-ADMIN có các trang quản lý người dùng, quản lý việc làm, việc làm đã xóa, chất lượng dữ liệu, trạng thái hệ thống và trạng thái thu thập. Xóa mềm chỉ thay đổi quyền hiển thị của tin, giữ dữ liệu nguồn để có thể khôi phục. Trạng thái kiểm duyệt và nhật ký thao tác được lưu trong DynamoDB; Projection Worker đồng bộ snapshot sang S3 để Athena áp dụng bộ lọc kiểm duyệt.
+ADMIN có các trang Trạng thái hệ thống, Quản lý người dùng, Quản lý việc làm và Chất lượng dữ liệu. Xóa mềm chỉ thay đổi quyền hiển thị của tin, giữ dữ liệu nguồn để có thể khôi phục. Trạng thái kiểm duyệt và nhật ký thao tác được lưu trong DynamoDB; Projection Worker đồng bộ snapshot sang S3 để Athena áp dụng bộ lọc kiểm duyệt.
 
 #### 5.5. Triển khai và vận hành
 
@@ -132,7 +133,18 @@ Sản phẩm bàn giao gồm source dự án, cấu hình triển khai, bộ ki�
 
 ### 8. Chi phí và giới hạn triển khai
 
-Chi phí gồm EC2, EBS, IPv4 công khai, dung lượng và yêu cầu S3, dữ liệu Athena quét, DynamoDB, CloudWatch và lưu lượng truyền dữ liệu phát sinh. Mức chi phụ thuộc thời gian vận hành và mức sử dụng thực tế. Báo cáo chưa đưa ra tổng chi phí cố định khi chưa có bảng tổng hợp hóa đơn tương ứng.
+Chi phí dự kiến mỗi tháng cho hệ thống tại Singapore (ap-southeast-1), với máy chủ hoạt động liên tục:
+
+| Thành phần | Chi phí dự kiến/tháng (USD) |
+| --- | ---: |
+| EC2 t3.small Linux | 19,27 |
+| EBS gp3 30 GiB | 2,88 |
+| Một địa chỉ IPv4 công khai | 3,65 |
+| **Tổng chi phí nền** | **25,80** |
+
+**Ngân sách dự trù: 35 USD/tháng**, gồm 25,80 USD chi phí nền và 9,20 USD dự phòng cho S3, Glue Data Catalog, Athena, DynamoDB (gồm khôi phục theo thời điểm), CloudWatch và truyền dữ liệu. Các khoản này phụ thuộc dung lượng lưu trữ, số yêu cầu, dữ liệu quét và log phát sinh; 9,20 USD là khoản dự phòng, chưa phải chi phí đã đo.
+
+Đây là dự toán trước thuế và trước khi trừ credit/ưu đãi, không phải hóa đơn thực tế; chưa tính phí CPU credit bổ sung của T3 nếu phát sinh. Đơn giá EC2 và EBS lấy từ tài liệu triển khai của dự án; phí IPv4 theo [bảng giá Amazon VPC](https://aws.amazon.com/vpc/pricing/).
 
 Mô hình một EC2 phù hợp phạm vi thực hành và giúp tập trung vận hành. Khi máy chủ dừng, website và các tiến trình trên máy cũng bị gián đoạn. Địa chỉ IPv4 tự cấp có thể thay đổi sau stop/start. Snapshot kiểm duyệt được đồng bộ định kỳ nên có độ trễ giữa DynamoDB và lớp truy vấn Athena.
 
@@ -140,7 +152,13 @@ Dữ liệu nguồn có thể thiếu lương, cấp bậc hoặc thay đổi c�
 
 ### 9. Kết quả thực hiện
 
-Các bằng chứng thực hành ngày **11/11/2026** ghi nhận:
+#### 9.1. Kiểm thử mã nguồn
+
+Ngày **16/11/2026**, máy phát triển hoàn thành **144 unit test**, **6 bộ kiểm thử giao diện offline** và kiểm thử đồng hồ theo giờ Việt Nam với kết quả **PASS**.
+
+#### 9.2. Kiểm tra hệ thống triển khai trên AWS
+
+Các ảnh và log ngày **11/11/2026** ghi nhận:
 
 | Hạng mục | Kết quả |
 | --- | --- |
@@ -150,14 +168,11 @@ Các bằng chứng thực hành ngày **11/11/2026** ghi nhận:
 | Dashboard | Hiển thị 654 việc làm đang hoạt động, 321 doanh nghiệp, 131 tin công khai lương và 328 kỹ năng khi chưa áp dụng bộ lọc |
 | Truy cập web | HTTP chuyển sang HTTPS; health trả `ok`; WebSocket nhận mã 101 |
 | Tự động hóa | Pipeline timer được bật, có lịch 02:00 giờ Việt Nam; các dịch vụ hỗ trợ có bằng chứng trạng thái và log |
-| Kiểm thử | Bộ unit test hoàn thành 140 test với kết quả `OK`; các script kiểm thử giao diện đăng ký, kiểm duyệt và tiếng Việt có thông báo kiểm tra thành công |
 
-Số bản ghi trong dữ liệu hiện tại khác số tin thu thập của một lượt vì hệ thống có đồng bộ và lưu trạng thái qua nhiều lần cập nhật. Số việc làm công khai trên dashboard là tập dữ liệu sau các điều kiện hiển thị. Các số liệu trên gắn với thời điểm thực hành và có thể thay đổi khi dữ liệu được cập nhật.
+Lượt thu thập ghi nhận **624 tin**; dữ liệu hiện tại sau đồng bộ gồm **1.072 bản ghi**; dashboard hiển thị **654 việc làm đang hoạt động** tại thời điểm kiểm tra. Lượt chạy có `snapshot_complete: false`, nên không được xem là snapshot đầy đủ.
 
 ### 10. Kết luận và hướng phát triển
 
 Vietnam IT Job Market đã kết nối quá trình thu thập dữ liệu ITviec, ETL bằng Python, lưu trữ và truy vấn trên AWS với một website phân tích có chức năng người dùng và quản trị. Lịch xử lý tự động, kiểm duyệt và log tập trung hỗ trợ theo dõi hệ thống sau triển khai.
 
 Hướng phát triển tiếp theo là kiểm thử tải, cải thiện việc chuẩn hóa các trường còn thiếu, hoàn thiện quản lý phiên và phục hồi tài khoản, bổ sung kênh nhận cảnh báo, đồng thời đánh giá phương án địa chỉ truy cập ổn định và tăng tính sẵn sàng. Các nội dung này là định hướng mở rộng, chưa tính là kết quả đã triển khai của đề tài.
-
-[Xem Workshop Vietnam IT Job Market →](../5-Workshop/)

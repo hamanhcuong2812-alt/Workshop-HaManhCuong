@@ -8,7 +8,7 @@ aliases:
   - "/5-workshop/5.7-athena/"
 ---
 
-AWS Glue Data Catalog lưu cấu trúc và vị trí dữ liệu trên S3; Amazon Athena sử dụng thông tin này để truy vấn dữ liệu phục vụ dashboard. Phần kiểm duyệt dữ liệu được trình bày tại mục 5.5.
+AWS Glue Data Catalog lưu cấu trúc và vị trí dữ liệu trên S3; Amazon Athena sử dụng thông tin này để truy vấn dữ liệu phục vụ dashboard. Phần kiểm duyệt dữ liệu được trình bày tại mục 4.5.
 
 ### Các bước thiết lập
 
