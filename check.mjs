@@ -10,6 +10,10 @@ for (const file of files) {
   const html = fs.readFileSync(file, 'utf8');
   const route = basePath + '/' + path.relative(output, path.dirname(file)).replaceAll('\\', '/') + '/';
   if ((html.match(/<h1[ >]/g) || []).length !== 1) errors.push(`${route}: expected one main heading`);
+  if (html.includes('<html lang="en">')) {
+    const navigation = html.match(/<nav id="navigation">([\s\S]*?)<\/nav>/)?.[1] || '';
+    if (/Nhật ký|Bản đề xuất|Các sự kiện|Tự đánh giá|Chia sẻ/.test(navigation)) errors.push(`${route}: Vietnamese labels in English navigation`);
+  }
   for (const match of html.matchAll(/(?:href|src|data-url)="([^"]+)"/g)) {
     const href = match[1].replaceAll('&amp;', '&');
     if (/^(https?:|mailto:|tel:|data:)/.test(href)) continue;

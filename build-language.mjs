@@ -33,7 +33,7 @@ const pages = walk(contentRoot).filter(file => file.endsWith('.md')).map(file =>
   const relative = path.relative(contentRoot, path.dirname(file)).replaceAll('\\', '/');
   return { title, displayNumber: metadata.match(/^pre:.*?<b>\s*(\d+(?:\.\d+)*)\.?\s*<\/b>/m)?.[1], route: '/' + relative.toLowerCase() + '/', body: raw.slice(frontmatter?.[0].length || 0), weight: Number(metadata.match(/^weight:\s*(\d+)/m)?.[1] || 0), section: relative.split('/')[0].toLowerCase() };
 });
-const sections = [
+const sections = english ? [["1-worklog", "1. Worklog"], ["2-proposal", "2. Proposal"], ["3-events", "3. Meetup events attended"], ["4-workshop", "4. Workshop"], ["5-self-evaluation", "5. Self-evaluation"], ["6-feedback", "6. Feedback and suggestions"]] : [
   ['1-worklog', '1. Nhật ký công việc'], ['2-proposal', '2. Bản đề xuất'],
   ['3-events', '3. Các sự kiện meetup đã tham gia'],
   ['4-workshop', '4. Workshop'], ['5-self-evaluation', '5. Tự đánh giá'],
@@ -125,7 +125,7 @@ fs.writeFileSync(path.join(output, '404.html'), '<!doctype html><html lang="vi">
 console.log(`Built ${pages.length} pages with ${search.length} search entries.`);
 
 function localizeInterface(html) {
-  const labels = {"Báo cáo thực tập": "Internship Report", "1. Nhật ký công việc": "1. Worklog", "2. Bản đề xuất": "2. Proposal", "3. Các bài blogs đã đăng": "3. Published blog posts", "3. Các sự kiện meetup đã tham gia": "3. Meetup events attended", "5. Tự đánh giá": "5. Self-evaluation", "6. Chia sẻ, đóng góp ý kiến": "6. Feedback and suggestions", "Điều hướng báo cáo": "Report navigation", "Trang chủ báo cáo": "Report home", "Tìm kiếm tài liệu…": "Search documentation…", "Tìm kiếm tài liệu": "Search documentation", "Xóa tìm kiếm": "Clear search", "Nhóm FB": "FB Group", "Cập nhật": "Updated", "Đề tài": "Project", "Chương trình": "Program", "Đóng điều hướng": "Close navigation", "Liên kết đến": "Link to", "Bảng nội dung": "Content table", "Sao chép đoạn mã": "Copy code", "Sao chép": "Copy", "Mở điều hướng": "Open navigation", "Về trang chủ": "Home", "Trang trước và tiếp theo": "Previous and next pages", "Trang trước": "Previous page", "Trang tiếp theo": "Next page", "Tài liệu nhóm · Cập nhật": "Group document · Updated", "Xem ảnh minh chứng": "View evidence image", "Đóng ảnh": "Close image"};
+  const labels = {"Ngôn ngữ / Language": "Language","Báo cáo thực tập": "Internship Report", "1. Nhật ký công việc": "1. Worklog", "2. Bản đề xuất": "2. Proposal", "3. Các bài blogs đã đăng": "3. Published blog posts", "3. Các sự kiện meetup đã tham gia": "3. Meetup events attended", "5. Tự đánh giá": "5. Self-evaluation", "6. Chia sẻ, đóng góp ý kiến": "6. Feedback and suggestions", "Điều hướng báo cáo": "Report navigation", "Trang chủ báo cáo": "Report home", "Tìm kiếm tài liệu…": "Search documentation…", "Tìm kiếm tài liệu": "Search documentation", "Xóa tìm kiếm": "Clear search", "Nhóm FB": "FB Group", "Cập nhật": "Updated", "Đề tài": "Project", "Chương trình": "Program", "Đóng điều hướng": "Close navigation", "Liên kết đến": "Link to", "Bảng nội dung": "Content table", "Sao chép đoạn mã": "Copy code", "Sao chép": "Copy", "Mở điều hướng": "Open navigation", "Về trang chủ": "Home", "Trang trước và tiếp theo": "Previous and next pages", "Trang trước": "Previous page", "Trang tiếp theo": "Next page", "Tài liệu nhóm · Cập nhật": "Group document · Updated", "Xem ảnh minh chứng": "View evidence image", "Đóng ảnh": "Close image"};
   for (const [vi,en] of Object.entries(labels).sort((a,b)=>b[0].length-a[0].length)) html = html.replaceAll(vi,en);
   return html;
 }
