@@ -97,6 +97,9 @@ let translationScript;
 function applyReportLanguage(language) {
   localStorage.setItem('report-language', language);
   languageSelect.value = language;
+  document.querySelectorAll('.technical-term').forEach(term => {
+    term.innerHTML = language === 'en' ? term.dataset.en : term.dataset.vi;
+  });
   const combo = document.querySelector('.goog-te-combo');
   if (combo) {
     combo.value = language;

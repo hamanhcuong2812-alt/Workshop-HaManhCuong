@@ -1,3 +1,4 @@
+import { protectTechnicalHtml } from './technical-terms.mjs';
 import fs from 'node:fs';
 import path from 'node:path';
 import { createHash } from 'node:crypto';
@@ -107,7 +108,7 @@ for (const page of pages) {
   const html = `<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Báo cáo thực tập Hà Mạnh Cường – Vietnam IT Job Market. Worklog, bản đề xuất và Workshop triển khai trên AWS."><meta name="theme-color" content="#283e5b"><title>${escape(page.title)} – Hà Mạnh Cường</title><link rel="stylesheet" href="/style.css?v=${styleVersion}"><script src="/app.js?v=${scriptVersion}" defer></script></head><body${page.route === "/" ? ' class="homepage"' : page.route !== '/' ? ' class="report-page"' : ""}>${sidebar(page)}<main id="main"><header class="topbar"><button id="menu-toggle" aria-label="Mở điều hướng" aria-expanded="false" aria-controls="sidebar">☰</button><div class="breadcrumbs">${breadcrumbs || 'Vietnam IT Job Market'}</div><a class="home-link" href="/" aria-label="Về trang chủ">⌂</a></header><div class="content"><h1>${escape(page.title)}</h1><article>${article}</article><nav class="page-navigation" aria-label="Trang trước và tiếp theo">${previous ? `<a href="${previous.route}" rel="prev"><small>← Trang trước</small>${escape(previous.title)}</a>` : '<span></span>'}${next ? `<a href="${next.route}" rel="next"><small>Trang tiếp theo →</small>${escape(next.title)}</a>` : ''}</nav>${sectionLabel ? `<p class="document-meta source-date">${sectionLabel}</p>` : ''}<p class="page-credit">Hà Mạnh Cường · Authentication & User · Vietnam IT Job Market</p></div>${next ? `<a class="edge-next" href="${next.route}" aria-label="Trang tiếp theo: ${escape(next.title)}">›</a>` : ''}${previous ? `<a class="edge-prev" href="${previous.route}" aria-label="Trang trước: ${escape(previous.title)}">‹</a>` : ''}</main><dialog id="image-viewer" aria-label="Xem ảnh minh chứng"><button id="close-image" aria-label="Đóng ảnh">×</button><img alt=""><p></p></dialog></body></html>`;
   const directory = path.join(output, page.route);
   fs.mkdirSync(directory, { recursive: true });
-  const deployedHtml = html.replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attribute, target) => `${attribute}="${baseUrl}/${target}"`);
+  const deployedHtml = protectTechnicalHtml(html).replace(/(href|src)="\/(?!\/)([^"]*)"/g, (_, attribute, target) => `${attribute}="${baseUrl}/${target}"`);
   fs.writeFileSync(path.join(directory, 'index.html'), deployedHtml);
   search.push({ title: page.title, route: baseUrl + page.route, text: article.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 18000) });
 }
