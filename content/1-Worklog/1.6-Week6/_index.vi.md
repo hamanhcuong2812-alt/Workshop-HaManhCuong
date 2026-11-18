@@ -32,6 +32,6 @@ pre: "<b>1.6. </b>"
 
 ## Liên hệ với phần việc Authentication & User
 
-Liên hệ users/accounts.json với tài khoản và users/activity/<hash-user-id>.json với hoạt động cá nhân. Mã nguồn đối chiếu gồm user_storage.py và s3_store.py.
+Liên hệ users/accounts.json với tài khoản và `users/activity/<hash-user-id>.json` với hoạt động cá nhân. Mã nguồn đối chiếu gồm user_storage.py và s3_store.py.
 
 [Mã nguồn và minh chứng phần tài khoản](/1-worklog/#minh-chung-kiem-thu).

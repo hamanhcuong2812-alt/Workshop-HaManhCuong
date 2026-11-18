@@ -1,3 +1,4 @@
+const english = document.documentElement.lang === 'en';
 const siteRoot = new URL('.', document.currentScript.src);
 const menu = document.querySelector('#menu-toggle');
 const backdrop = document.querySelector('.backdrop');
@@ -36,9 +37,9 @@ async function renderSearch() {
   results.hidden = !query;
   results.replaceChildren();
   if (!query) return;
-  results.textContent = 'Đang tìm kiếm…';
+  results.textContent = (document.documentElement.lang === 'en' ? 'Searching…' : 'Đang tìm kiếm…');
   try {
-    indexPromise ??= fetch(new URL('search-index.json', siteRoot)).then(response => {
+    indexPromise ??= fetch(new URL((document.documentElement.lang === 'en' ? 'en/' : '') + 'search-index.json', siteRoot)).then(response => {
       if (!response.ok) throw new Error('Search index unavailable');
       return response.json();
     }).catch(error => { indexPromise = undefined; throw error; });
@@ -46,7 +47,7 @@ async function renderSearch() {
     if (revision !== searchRevision) return;
     const tokens = query.split(/\s+/);
     const matches = index.filter(page => tokens.every(token => normalize(page.title + ' ' + page.text).includes(token))).sort((a, b) => Number(normalize(b.title).includes(query)) - Number(normalize(a.title).includes(query)));
-    results.textContent = matches.length ? `${matches.length} kết quả` : 'Chưa tìm thấy nội dung phù hợp.';
+    results.textContent = matches.length ? `${matches.length} ${document.documentElement.lang === 'en' ? 'results' : 'kết quả'}` : (document.documentElement.lang === 'en' ? 'No matching content found.' : 'Chưa tìm thấy nội dung phù hợp.');
     for (const page of matches.slice(0, 25)) {
       const link = document.createElement('a');
       link.href = page.route;
@@ -58,7 +59,7 @@ async function renderSearch() {
       results.append(link);
     }
   } catch {
-    if (revision === searchRevision) results.textContent = 'Chưa tải được dữ liệu tìm kiếm. Hãy thử lại.';
+    if (revision === searchRevision) results.textContent = english ? 'Search data could not be loaded. Please try again.' : 'Chưa tải được dữ liệu tìm kiếm. Hãy thử lại.';
   }
 }
 search.addEventListener('input', renderSearch);
@@ -67,17 +68,17 @@ clear.addEventListener('click', () => { search.value = ''; renderSearch(); searc
 document.querySelectorAll('.copy-code').forEach(button => button.addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(button.parentElement.querySelector('code').textContent);
-    button.textContent = 'Đã sao chép';
+    button.textContent = english ? 'Copied' : 'Đã sao chép';
   } catch {
-    button.textContent = 'Chọn mã để sao chép';
+    button.textContent = english ? 'Select the code to copy' : 'Chọn mã để sao chép';
   }
-  setTimeout(() => { button.textContent = 'Sao chép'; }, 2200);
+  setTimeout(() => { button.textContent = english ? 'Copy' : 'Sao chép'; }, 2200);
 }));
 const viewer = document.querySelector('#image-viewer');
 document.querySelectorAll('article img').forEach(image => {
   image.tabIndex = 0;
   image.setAttribute('role', 'button');
-  image.setAttribute('aria-label', 'Phóng to ảnh: ' + image.alt);
+  image.setAttribute('aria-label', (english ? 'Enlarge image: ' : 'Phóng to ảnh: ') + image.alt);
   const open = () => {
     viewer.querySelector('img').src = image.src;
     viewer.querySelector('img').alt = image.alt;
@@ -90,47 +91,13 @@ document.querySelectorAll('article img').forEach(image => {
 document.querySelector('#close-image').addEventListener('click', () => viewer.close());
 viewer.addEventListener('click', event => { if (event.target === viewer) viewer.close(); });
 
-// Load translation only when the reader requests English.
+// Native language pages, matching the bilingual source report.
 const languageSelect = document.querySelector('#report-language');
-const translationStatus = document.querySelector('#translation-status');
-let translationScript;
-function applyReportLanguage(language) {
-  localStorage.setItem('report-language', language);
-  languageSelect.value = language;
-  document.querySelectorAll('.technical-term').forEach(term => {
-    term.innerHTML = language === 'en' ? term.dataset.en : term.dataset.vi;
-  });
-  const combo = document.querySelector('.goog-te-combo');
-  if (combo) {
-    combo.value = language;
-    combo.dispatchEvent(new Event('change', { bubbles: true }));
-    translationStatus.textContent = language === 'en' ? 'Automatic translation by Google' : '';
-    return;
-  }
-  if (language === 'vi') return;
-  translationStatus.textContent = 'Loading English translation…';
-  if (translationScript) return;
-  window.reportTranslateReady = () => {
-    new google.translate.TranslateElement({pageLanguage: 'vi', includedLanguages: 'vi,en', autoDisplay: false}, 'google_translate_element');
-    let attempts = 0;
-    const timer = setInterval(() => {
-      if (document.querySelector('.goog-te-combo')) {
-        clearInterval(timer);
-        setTimeout(() => applyReportLanguage(languageSelect.value), 800);
-      } else if (++attempts > 40) {
-        clearInterval(timer);
-        translationStatus.textContent = 'Translation unavailable. Please try again later.';
-      }
-    }, 250);
-  };
-  translationScript = document.createElement('script');
-  translationScript.src = 'https://translate.google.com/translate_a/element.js?cb=reportTranslateReady';
-  translationScript.onerror = () => {
-    translationStatus.textContent = 'Cannot connect to Google Translate. Please try again.';
-    translationScript.remove();
-    translationScript = undefined;
-  };
-  document.head.append(translationScript);
+languageSelect?.addEventListener('change', () => {
+  const target = languageSelect.selectedOptions[0].dataset.url;
+  if (target) location.assign(target);
+});
+// Clear legacy automatic-translation cookies; English now has its own content.
+for (const domain of ['', location.hostname, '.' + location.hostname]) {
+  document.cookie = `googtrans=; Max-Age=0; path=/${domain ? '; domain=' + domain : ''}`;
 }
-languageSelect?.addEventListener('change', () => applyReportLanguage(languageSelect.value));
-if (localStorage.getItem('report-language') === 'en') applyReportLanguage('en');

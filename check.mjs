@@ -10,7 +10,7 @@ for (const file of files) {
   const html = fs.readFileSync(file, 'utf8');
   const route = basePath + '/' + path.relative(output, path.dirname(file)).replaceAll('\\', '/') + '/';
   if ((html.match(/<h1[ >]/g) || []).length !== 1) errors.push(`${route}: expected one main heading`);
-  for (const match of html.matchAll(/(?:href|src)="([^"]+)"/g)) {
+  for (const match of html.matchAll(/(?:href|src|data-url)="([^"]+)"/g)) {
     const href = match[1].replaceAll('&amp;', '&');
     if (/^(https?:|mailto:|tel:|data:)/.test(href)) continue;
     const url = new URL(href, 'https://check.invalid' + route.replaceAll('//', '/'));

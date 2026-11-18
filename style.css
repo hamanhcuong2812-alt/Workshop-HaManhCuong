@@ -55,4 +55,27 @@
 .language-switch label{font-size:14px;color:#c7d0db}
 .language-switch select{width:100%;padding:9px 10px;border:1px solid #61748d;border-radius:4px;background:#263b53;color:#fff;font:inherit;cursor:pointer}
 .language-switch small{font-size:12px;line-height:1.5;color:#c7d0db}
-#google_translate_element{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+
+
+/* Hierarchical navigation matching the supplied Learn-theme report. */
+#sidebar{width:300px}
+#main,.report-page #main{margin-left:300px}
+.report-page .edge-prev{left:312px}
+#sidebar .sections{padding:18px 16px 8px}
+#sidebar .sections>li>a,#sidebar .sections>li>details>summary{font-size:17.6px;line-height:2rem;padding:5px 0}
+#sidebar details>ul{padding:0 0 16px 16px;background:transparent}
+#sidebar details>ul ul{padding-bottom:0}
+#sidebar details>ul a,#sidebar details>ul summary{font-size:15px;line-height:1.55;padding:6px 0}
+#sidebar .sections>li.in-path{background:#0a0c0e;margin:0 -16px;padding:0 16px}
+#sidebar .sections>li.in-path>details>summary>a{font-weight:600}
+#sidebar summary>a{min-width:0;overflow-wrap:break-word}
+#sidebar .chevron{font-size:22px;flex:0 0 16px;text-align:center}
+#sidebar a[aria-current=page]{color:#777!important;background:#fff}
+#sidebar li>a[aria-current=page]{padding:7px 12px;margin-left:-12px;margin-right:-16px}
+#sidebar summary:has(>a[aria-current=page]){padding:7px 12px;margin-left:-12px;margin-right:-16px}
+#sidebar summary>a[aria-current=page]{background:transparent}
+#sidebar summary:hover,#sidebar li>a:hover{background:transparent;color:#fff}
+#sidebar .in-path>details>summary{color:#fff}
+@media(max-width:700px){#main,.report-page #main{margin-left:0}#sidebar{width:min(300px,90vw)}}
+
+#sidebar .sidebar-scroll{overflow-x:hidden;overscroll-behavior-y:contain}
