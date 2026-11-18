@@ -3,7 +3,7 @@ title: "Cài runtime và cấu hình ứng dụng trên EC2"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.6.2. </b> "
+pre: " <b> 5.6.2. </b> "
 aliases:
   - "/5-workshop/5.11-ec2-deployment/5.11.2-step2/"
   - "/5-workshop/5.8-ec2-https/5.8.2-step2/"
@@ -40,4 +40,4 @@ Hai file cấu hình thuộc **root:vnjob** và có quyền **640**: root đư�
 
 ---
 
-[← 4.6. Triển khai mã nguồn và môi trường chạy trên EC2](../) · [Mục lục Workshop](../../) · [Bước trước](../5.6.1-step1/) · [Bước tiếp →](../5.6.3-step3/)
+[← 5.6. Triển khai mã nguồn và môi trường chạy trên EC2](../) · [Mục lục Workshop](../../) · [Bước trước](../5.6.1-step1/) · [Bước tiếp →](../5.6.3-step3/)

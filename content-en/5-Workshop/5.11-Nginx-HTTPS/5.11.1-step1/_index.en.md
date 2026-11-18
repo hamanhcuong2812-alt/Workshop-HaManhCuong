@@ -3,7 +3,7 @@ title: "Configure web access ports and Nginx"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.10.1. </b> "
+pre: " <b> 5.10.1. </b> "
 aliases:
   - "/en/5-workshop/5.12-nginx-https/"
 ---
@@ -41,4 +41,4 @@ sudo systemctl status nginx --no-pager -n 0
 
 ---
 
-[← 4.10. Configure Nginx and IP-based HTTPS](../) · [Workshop contents](../../) · [Next step →](../5.11.2-step2/)
+[← 5.10. Configure Nginx and IP-based HTTPS](../) · [Workshop contents](../../) · [Next step →](../5.11.2-step2/)

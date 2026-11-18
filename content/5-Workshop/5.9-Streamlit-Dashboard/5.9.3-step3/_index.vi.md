@@ -3,7 +3,7 @@ title: "Tìm kiếm, lọc và xem chi tiết việc làm"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.9.3. </b> "
+pre: " <b> 5.9.3. </b> "
 aliases:
   - "/5-workshop/5.8-streamlit-dashboard/5.8.3-step3/"
   - "/5-workshop/5.8-streamlit-dashboard/5.8.5-step5/"
@@ -64,4 +64,4 @@ Phần chi tiết giúp người dùng đánh giá từng cơ hội qua thông t
 
 ---
 
-[← 4.9. Cấu hình và triển khai Streamlit Dashboard](../) · [Mục lục Workshop](../../) · [Bước trước](../5.9.2-step2/)
+[← 5.9. Cấu hình và triển khai Streamlit Dashboard](../) · [Mục lục Workshop](../../) · [Bước trước](../5.9.2-step2/)

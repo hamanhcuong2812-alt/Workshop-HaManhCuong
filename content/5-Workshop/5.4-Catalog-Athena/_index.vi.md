@@ -3,7 +3,7 @@ title: "Thiết lập Glue Data Catalog và Athena"
 date: 2026-11-11T00:00:00+07:00
 weight: 4
 chapter: false
-pre: " <b> 4.4. </b> "
+pre: " <b> 5.4. </b> "
 aliases:
   - "/5-workshop/5.7-athena/"
 ---
@@ -12,9 +12,9 @@ AWS Glue Data Catalog lưu cấu trúc và vị trí dữ liệu trên S3; Amazo
 
 ### Các bước thiết lập
 
-- [4.4.1. Database, bảng nguồn và cấu hình Athena](5.4.1-step1/)
-- [4.4.2. Truy vấn dữ liệu kỹ năng bằng Athena](5.4.2-step2/)
+- [5.4.1. Database, bảng nguồn và cấu hình Athena](5.4.1-step1/)
+- [5.4.2. Truy vấn dữ liệu kỹ năng bằng Athena](5.4.2-step2/)
 
 ---
 
-[← 5.3](../5.3-S3-Storage/) · [Mục lục](../) · [4.5 →](../5.5-DynamoDB-Moderation/)
+[← 5.3](../5.3-S3-Storage/) · [Mục lục](../) · [5.5 →](../5.5-DynamoDB-Moderation/)

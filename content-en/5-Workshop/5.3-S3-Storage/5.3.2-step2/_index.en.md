@@ -3,7 +3,7 @@ title: "Parquet Data and EC2 Deployment Seed Data"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.3.2. </b> "
+pre: " <b> 5.3.2. </b> "
 ---
 
 ### Analytical data on S3
@@ -33,4 +33,4 @@ The seed is stored in a directory named after its content's SHA-256 digest. The 
 
 ---
 
-[← 4.3. Amazon S3 Storage Setup](../) · [Workshop contents](../../) · [Previous step](../5.3.1-step1/)
+[← 5.3. Amazon S3 Storage Setup](../) · [Workshop contents](../../) · [Previous step](../5.3.1-step1/)

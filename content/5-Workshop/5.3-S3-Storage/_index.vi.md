@@ -3,7 +3,7 @@ title: "Thiết lập lưu trữ trên Amazon S3"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.3. </b> "
+pre: " <b> 5.3. </b> "
 aliases:
   - "/5-workshop/5.5-s3-storage/"
   - "/5-workshop/5.4-s3-glue-athena/"
@@ -31,9 +31,9 @@ Chuẩn bị bucket, cấu trúc dữ liệu và canonical mà ứng dụng/pipe
 
 ### Các bước thiết lập
 
-- [4.3.1. Bucket và cấu trúc lưu trữ S3](5.3.1-step1/)
-- [4.3.2. Dữ liệu Parquet và dữ liệu nền triển khai EC2](5.3.2-step2/)
+- [5.3.1. Bucket và cấu trúc lưu trữ S3](5.3.1-step1/)
+- [5.3.2. Dữ liệu Parquet và dữ liệu nền triển khai EC2](5.3.2-step2/)
 
 ---
 
-[← 5.2](../5.2-Prerequisites/) · [Mục lục](../) · [4.4 →](../5.4-Catalog-Athena/)
+[← 5.2](../5.2-Prerequisites/) · [Mục lục](../) · [5.4 →](../5.4-Catalog-Athena/)

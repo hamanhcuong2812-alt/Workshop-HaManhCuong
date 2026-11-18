@@ -3,7 +3,7 @@ title: "Control record and moderation synchronization to S3"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.5.2. </b> "
+pre: " <b> 5.5.2. </b> "
 aliases:
   - "/en/5-workshop/5.10-administration/5.10.4-step4/"
   - "/en/5-workshop/5.10-administration/5.10.5-step5/"
@@ -45,4 +45,4 @@ The snapshot uses **schema_version: 2** and **backend: DYNAMODB** to identify it
 
 ---
 
-[← 4.5. Setting up DynamoDB and moderation data](../) · [Workshop contents](../../) · [Previous step](../5.5.1-step1/) · [Next step →](../5.5.3-step3/)
+[← 5.5. Setting up DynamoDB and moderation data](../) · [Workshop contents](../../) · [Previous step](../5.5.1-step1/) · [Next step →](../5.5.3-step3/)

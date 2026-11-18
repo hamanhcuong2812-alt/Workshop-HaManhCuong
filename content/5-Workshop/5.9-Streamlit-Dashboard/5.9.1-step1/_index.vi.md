@@ -3,7 +3,7 @@ title: "Kết nối nguồn dữ liệu và khởi chạy ứng dụng"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.9.1. </b> "
+pre: " <b> 5.9.1. </b> "
 aliases:
   - "/5-workshop/5.8-streamlit-dashboard/"
   - "/5-workshop/5.8-streamlit-dashboard/5.8.1-step1/"
@@ -50,4 +50,4 @@ App đọc được dữ liệu bằng role EC2; health và UI có kết quả, 
 
 ---
 
-[← 4.9. Cấu hình và triển khai Streamlit Dashboard](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.9.2-step2/)
+[← 5.9. Cấu hình và triển khai Streamlit Dashboard](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.9.2-step2/)

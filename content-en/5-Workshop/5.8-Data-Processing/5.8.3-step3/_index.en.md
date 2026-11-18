@@ -3,7 +3,7 @@ title: "Publish Parquet Data to S3"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 4.8.3. </b> "
+pre: " <b> 5.8.3. </b> "
 aliases:
   - "/en/5-workshop/5.5-s3-storage/5.5.2-step2/"
   - "/en/5-workshop/5.4-s3-glue-athena/5.4.1-step1/"
@@ -65,4 +65,4 @@ The **run-id** metadata links the Parquet file on S3 to the pipeline run that pr
 
 ---
 
-[← 4.8. Set Up ETL and Publish Parquet](../) · [Workshop Contents](../../) · [Previous Step](../5.8.2-step2/)
+[← 5.8. Set Up ETL and Publish Parquet](../) · [Workshop Contents](../../) · [Previous Step](../5.8.2-step2/)

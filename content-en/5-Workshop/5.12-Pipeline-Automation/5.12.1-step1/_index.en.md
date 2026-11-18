@@ -3,7 +3,7 @@ title: "Schedule the pipeline at 02:00 Vietnam time"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.11.1. </b> "
+pre: " <b> 5.11.1. </b> "
 aliases:
   - "/en/5-workshop/5.13-pipeline-automation/"
   - "/en/5-workshop/5.13-pipeline-automation/5.13.1-step1/"
@@ -35,4 +35,4 @@ The output shows the timer **enabled**, **active (waiting)**, and scheduled to t
 
 ---
 
-[← 4.11. Schedule the pipeline and Operations Worker](../) · [Workshop contents](../../) · [Next step →](../5.12.2-step2/)
+[← 5.11. Schedule the pipeline and Operations Worker](../) · [Workshop contents](../../) · [Next step →](../5.12.2-step2/)

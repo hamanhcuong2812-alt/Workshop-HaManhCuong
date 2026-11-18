@@ -3,7 +3,7 @@ title: "Lập lịch pipeline lúc 02:00 giờ Việt Nam"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 4.11.1. </b> "
+pre: " <b> 5.11.1. </b> "
 aliases:
   - "/5-workshop/5.13-pipeline-automation/"
   - "/5-workshop/5.13-pipeline-automation/5.13.1-step1/"
@@ -35,4 +35,4 @@ Kết quả hiển thị timer đã **enabled**, đang **active (waiting)** và 
 
 ---
 
-[← 4.11. Thiết lập lịch pipeline và Operations Worker](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.12.2-step2/)
+[← 5.11. Thiết lập lịch pipeline và Operations Worker](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.12.2-step2/)

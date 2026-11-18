@@ -3,7 +3,7 @@ title: "Clean Data and Export Parquet"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.8.2. </b> "
+pre: " <b> 5.8.2. </b> "
 aliases:
   - "/en/5-workshop/5.4-data-processing/5.4.2-step2/"
   - "/en/5-workshop/5.4-data-processing/5.4.3-step3/"
@@ -46,4 +46,4 @@ Comparing clean JSON and Parquet row counts checks that export preserved the num
 
 ---
 
-[← 4.8. Set Up ETL and Publish Parquet](../) · [Workshop Contents](../../) · [Previous Step](../5.8.1-step1/) · [Next Step →](../5.8.3-step3/)
+[← 5.8. Set Up ETL and Publish Parquet](../) · [Workshop Contents](../../) · [Previous Step](../5.8.1-step1/) · [Next Step →](../5.8.3-step3/)

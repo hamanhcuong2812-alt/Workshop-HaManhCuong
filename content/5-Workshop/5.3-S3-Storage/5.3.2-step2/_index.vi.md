@@ -3,7 +3,7 @@ title: "Dữ liệu Parquet và dữ liệu nền triển khai EC2"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 4.3.2. </b> "
+pre: " <b> 5.3.2. </b> "
 ---
 
 ### Dữ liệu phân tích trên S3
@@ -33,4 +33,4 @@ Bản seed được lưu trong thư mục mang mã SHA-256 của nội dung file
 
 ---
 
-[← 4.3. Thiết lập lưu trữ trên Amazon S3](../) · [Mục lục Workshop](../../) · [Bước trước](../5.3.1-step1/)
+[← 5.3. Thiết lập lưu trữ trên Amazon S3](../) · [Mục lục Workshop](../../) · [Bước trước](../5.3.1-step1/)
