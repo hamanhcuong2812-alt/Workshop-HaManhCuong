@@ -15,4 +15,4 @@ Hướng dẫn kết thúc sử dụng và tổng kết hệ thống; chương n
 
 ---
 
-[← 4.15](../4.13-Backup-Recovery/) · [Mục lục](../)
+[← 4.13](../4.13-Backup-Recovery/) · [Mục lục](../)

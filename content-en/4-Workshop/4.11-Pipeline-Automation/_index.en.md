@@ -16,4 +16,4 @@ Enable the daily schedule after publication acceptance and install the worker wi
 
 ---
 
-[← 4.11](../4.10-Nginx-HTTPS/) · [Contents](../) · [4.12 →](../4.12-Monitoring/)
+[← 4.10](../4.10-Nginx-HTTPS/) · [Contents](../) · [4.12 →](../4.12-Monitoring/)

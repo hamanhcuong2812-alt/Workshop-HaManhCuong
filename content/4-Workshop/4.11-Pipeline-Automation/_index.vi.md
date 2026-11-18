@@ -16,4 +16,4 @@ Bật lịch hằng ngày sau nghiệm thu publication, cài worker phục hồi
 
 ---
 
-[← 4.11](../4.10-Nginx-HTTPS/) · [Mục lục](../) · [4.12 →](../4.12-Monitoring/)
+[← 4.10](../4.10-Nginx-HTTPS/) · [Mục lục](../) · [4.12 →](../4.12-Monitoring/)
