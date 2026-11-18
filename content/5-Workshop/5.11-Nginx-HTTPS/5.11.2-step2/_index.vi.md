@@ -3,7 +3,7 @@ title: "Cài Certbot và cấu hình HTTPS tự động"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 5.10.2. </b> "
+pre: " <b> 4.10.2. </b> "
 aliases:
   - "/5-workshop/5.12-nginx-https/5.12.1-step1/"
   - "/5-workshop/5.12-nginx-https/5.12.3-step3/"
@@ -61,4 +61,4 @@ HTTPS mã hóa thông tin đăng nhập và hoạt động của người dùng 
 
 ---
 
-[← 5.10. Thiết lập Nginx và HTTPS theo IP](../) · [Mục lục Workshop](../../) · [Bước trước](../5.11.1-step1/) · [Bước tiếp →](../5.11.3-step3/)
+[← 4.10. Thiết lập Nginx và HTTPS theo IP](../) · [Mục lục Workshop](../../) · [Bước trước](../5.11.1-step1/) · [Bước tiếp →](../5.11.3-step3/)

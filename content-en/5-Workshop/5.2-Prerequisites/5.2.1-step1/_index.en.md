@@ -3,7 +3,7 @@ title: "Preparing the AWS Account, Region, and Tools"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 5.2.1. </b> "
+pre: " <b> 4.2.1. </b> "
 aliases:
   - "/en/5-workshop/5.2-prerequisites/5.2.4-step4/"
   - "/en/5-workshop/5.1-overview/5.1.2-step2/"
@@ -48,4 +48,4 @@ The checks show that the administration computer connects to AWS account `381924
 
 ---
 
-[← 5.2. Preparation](../) · [Workshop contents](../../) · [Next step →](../5.2.2-step2/)
+[← 4.2. Preparation](../) · [Workshop contents](../../) · [Next step →](../5.2.2-step2/)

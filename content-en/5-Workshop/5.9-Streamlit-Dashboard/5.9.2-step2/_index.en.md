@@ -3,7 +3,7 @@ title: "Display KPIs and Plotly charts"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 5.9.2. </b> "
+pre: " <b> 4.9.2. </b> "
 aliases:
   - "/en/5-workshop/5.8-streamlit-dashboard/5.8.2-step2/"
   - "/en/5-workshop/5.8-streamlit-dashboard/5.8.4-step4/"
@@ -61,4 +61,4 @@ The chart separates postings with salary information from those without disclose
 
 ---
 
-[← 5.9. Configure and deploy the Streamlit Dashboard](../) · [Workshop contents](../../) · [Previous step](../5.9.1-step1/) · [Next step →](../5.9.3-step3/)
+[← 4.9. Configure and deploy the Streamlit Dashboard](../) · [Workshop contents](../../) · [Previous step](../5.9.1-step1/) · [Next step →](../5.9.3-step3/)

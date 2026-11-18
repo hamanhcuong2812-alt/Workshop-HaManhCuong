@@ -3,7 +3,7 @@ title: "Đồng bộ current và history bằng runner"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 5.8.1. </b> "
+pre: " <b> 4.8.1. </b> "
 aliases:
   - "/5-workshop/5.4-data-processing/"
   - "/5-workshop/5.4-data-processing/5.4.1-step1/"
@@ -62,4 +62,4 @@ Dữ liệu hiện tại lưu thông tin việc làm sau đồng bộ; dữ li�
 
 ---
 
-[← 5.8. Thiết lập ETL và công bố Parquet](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.8.2-step2/)
+[← 4.8. Thiết lập ETL và công bố Parquet](../) · [Mục lục Workshop](../../) · [Bước tiếp →](../5.8.2-step2/)

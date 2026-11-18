@@ -3,7 +3,7 @@ title: "Synchronize Current and History Data with the Runner"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 5.8.1. </b> "
+pre: " <b> 4.8.1. </b> "
 aliases:
   - "/en/5-workshop/5.4-data-processing/"
   - "/en/5-workshop/5.4-data-processing/5.4.1-step1/"
@@ -62,4 +62,4 @@ Current data stores job information after synchronization; history stores events
 
 ---
 
-[← 5.8. Set Up ETL and Publish Parquet](../) · [Workshop Contents](../../) · [Next Step →](../5.8.2-step2/)
+[← 4.8. Set Up ETL and Publish Parquet](../) · [Workshop Contents](../../) · [Next Step →](../5.8.2-step2/)

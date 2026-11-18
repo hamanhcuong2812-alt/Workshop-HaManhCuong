@@ -3,7 +3,7 @@ title: "Run the Pipeline and Discover URLs"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 5.7.1. </b> "
+pre: " <b> 4.7.1. </b> "
 aliases:
   - "/en/5-workshop/5.3-itviec-collection/"
   - "/en/5-workshop/5.3-itviec-collection/5.3.1-step1/"
@@ -216,4 +216,4 @@ Discovery should have coverage_checked=true, an empty failed_pages list and uniq
 
 ---
 
-[← 5.7. Set Up and Run ITviec Collection](../) · [Workshop Contents](../../) · [Next Step →](../5.7.2-step2/)
+[← 4.7. Set Up and Run ITviec Collection](../) · [Workshop Contents](../../) · [Next Step →](../5.7.2-step2/)

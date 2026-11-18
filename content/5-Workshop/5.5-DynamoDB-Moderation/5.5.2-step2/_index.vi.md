@@ -3,7 +3,7 @@ title: "Bản ghi điều khiển và đồng bộ kiểm duyệt lên S3"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 5.5.2. </b> "
+pre: " <b> 4.5.2. </b> "
 aliases:
   - "/5-workshop/5.10-administration/5.10.4-step4/"
   - "/5-workshop/5.10-administration/5.10.5-step5/"
@@ -45,4 +45,4 @@ Bản tổng hợp sử dụng **schema_version: 2** và **backend: DYNAMODB** �
 
 ---
 
-[← 5.5. Thiết lập DynamoDB và dữ liệu kiểm duyệt](../) · [Mục lục Workshop](../../) · [Bước trước](../5.5.1-step1/) · [Bước tiếp →](../5.5.3-step3/)
+[← 4.5. Thiết lập DynamoDB và dữ liệu kiểm duyệt](../) · [Mục lục Workshop](../../) · [Bước trước](../5.5.1-step1/) · [Bước tiếp →](../5.5.3-step3/)

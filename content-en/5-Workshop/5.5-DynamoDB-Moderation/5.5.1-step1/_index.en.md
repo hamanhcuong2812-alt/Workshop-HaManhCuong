@@ -3,7 +3,7 @@ title: "The project's two DynamoDB tables"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 5.5.1. </b> "
+pre: " <b> 4.5.1. </b> "
 aliases:
   - "/en/5-workshop/5.10-administration/5.10.2-step2/"
   - "/en/5-workshop/5.7-administration/5.7.2-step2/"
@@ -45,4 +45,4 @@ Moderation actions and audit logging use these two tables. Accounts and personal
 
 ---
 
-[← 5.5. Setting up DynamoDB and moderation data](../) · [Workshop contents](../../) · [Next step →](../5.5.2-step2/)
+[← 4.5. Setting up DynamoDB and moderation data](../) · [Workshop contents](../../) · [Next step →](../5.5.2-step2/)

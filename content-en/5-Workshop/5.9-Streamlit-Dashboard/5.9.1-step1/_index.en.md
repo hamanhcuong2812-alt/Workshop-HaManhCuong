@@ -3,7 +3,7 @@ title: "Connect data sources and start the application"
 date: 2026-11-11T00:00:00+07:00
 weight: 1
 chapter: false
-pre: " <b> 5.9.1. </b> "
+pre: " <b> 4.9.1. </b> "
 aliases:
   - "/en/5-workshop/5.8-streamlit-dashboard/"
   - "/en/5-workshop/5.8-streamlit-dashboard/5.8.1-step1/"
@@ -50,4 +50,4 @@ The application can read data using the EC2 role; the health check and UI respon
 
 ---
 
-[← 5.9. Configure and deploy the Streamlit Dashboard](../) · [Workshop contents](../../) · [Next step →](../5.9.2-step2/)
+[← 4.9. Configure and deploy the Streamlit Dashboard](../) · [Workshop contents](../../) · [Next step →](../5.9.2-step2/)

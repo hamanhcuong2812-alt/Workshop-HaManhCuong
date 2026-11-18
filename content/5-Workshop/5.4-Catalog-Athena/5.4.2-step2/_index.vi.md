@@ -3,7 +3,7 @@ title: "Truy vấn dữ liệu kỹ năng bằng Athena"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 5.4.2. </b> "
+pre: " <b> 4.4.2. </b> "
 aliases:
   - "/5-workshop/5.7-athena/5.7.1-step1/"
   - "/5-workshop/5.4-s3-glue-athena/5.4.4-step4/"
@@ -32,4 +32,4 @@ Truy vấn đã lưu có trạng thái **Completed**, trả về **3.447 dòng**
 
 ---
 
-[← 5.4. Thiết lập Glue Data Catalog và Athena](../) · [Mục lục Workshop](../../) · [Bước trước](../5.4.1-step1/)
+[← 4.4. Thiết lập Glue Data Catalog và Athena](../) · [Mục lục Workshop](../../) · [Bước trước](../5.4.1-step1/)

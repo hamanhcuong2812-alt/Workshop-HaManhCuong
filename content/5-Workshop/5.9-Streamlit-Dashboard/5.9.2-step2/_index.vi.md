@@ -3,7 +3,7 @@ title: "Hiển thị KPI và biểu đồ Plotly"
 date: 2026-11-11T00:00:00+07:00
 weight: 2
 chapter: false
-pre: " <b> 5.9.2. </b> "
+pre: " <b> 4.9.2. </b> "
 aliases:
   - "/5-workshop/5.8-streamlit-dashboard/5.8.2-step2/"
   - "/5-workshop/5.8-streamlit-dashboard/5.8.4-step4/"
@@ -61,4 +61,4 @@ Biểu đồ phân chia tin có thông tin mức lương và tin chưa công kha
 
 ---
 
-[← 5.9. Cấu hình và triển khai Streamlit Dashboard](../) · [Mục lục Workshop](../../) · [Bước trước](../5.9.1-step1/) · [Bước tiếp →](../5.9.3-step3/)
+[← 4.9. Cấu hình và triển khai Streamlit Dashboard](../) · [Mục lục Workshop](../../) · [Bước trước](../5.9.1-step1/) · [Bước tiếp →](../5.9.3-step3/)

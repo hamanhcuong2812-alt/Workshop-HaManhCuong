@@ -3,7 +3,7 @@ title: "Công bố dữ liệu Parquet lên S3"
 date: 2026-11-11T00:00:00+07:00
 weight: 3
 chapter: false
-pre: " <b> 5.8.3. </b> "
+pre: " <b> 4.8.3. </b> "
 aliases:
   - "/5-workshop/5.5-s3-storage/5.5.2-step2/"
   - "/5-workshop/5.4-s3-glue-athena/5.4.1-step1/"
@@ -65,4 +65,4 @@ Metadata **run-id** liên kết file Parquet trên S3 với lượt pipeline t�
 
 ---
 
-[← 5.8. Thiết lập ETL và công bố Parquet](../) · [Mục lục Workshop](../../) · [Bước trước](../5.8.2-step2/)
+[← 4.8. Thiết lập ETL và công bố Parquet](../) · [Mục lục Workshop](../../) · [Bước trước](../5.8.2-step2/)

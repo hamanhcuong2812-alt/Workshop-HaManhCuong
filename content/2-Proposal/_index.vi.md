@@ -176,3 +176,4 @@ Lượt thu thập ghi nhận **624 tin**; dữ liệu hiện tại sau đồng 
 Vietnam IT Job Market đã kết nối quá trình thu thập dữ liệu ITviec, ETL bằng Python, lưu trữ và truy vấn trên AWS với một website phân tích có chức năng người dùng và quản trị. Lịch xử lý tự động, kiểm duyệt và log tập trung hỗ trợ theo dõi hệ thống sau triển khai.
 
 Hướng phát triển tiếp theo là kiểm thử tải, cải thiện việc chuẩn hóa các trường còn thiếu, hoàn thiện quản lý phiên và phục hồi tài khoản, bổ sung kênh nhận cảnh báo, đồng thời đánh giá phương án địa chỉ truy cập ổn định và tăng tính sẵn sàng. Các nội dung này là định hướng mở rộng, chưa tính là kết quả đã triển khai của đề tài.
+
